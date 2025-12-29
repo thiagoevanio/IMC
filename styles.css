@@ -1,0 +1,9 @@
+body { font-family: 'Inter', sans-serif; }
+.gradient-bg { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+.smooth-scroll { scroll-behavior: smooth; }
+/* Esconder setas dos inputs number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}

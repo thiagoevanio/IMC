@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI, BMR & Protein Calculator | Complete Health Guide - IMCEPROTEINA.COM.BR</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The most complete health tool. Calculate your BMI, Basal Metabolic Rate (BMR), and ideal daily Protein intake for hypertrophy or weight loss. All in one place.">
+    <meta name="keywords" content="bmi calculator, calculate bmr, daily protein, hypertrophy diet, weight loss, basal calculation, macros, imceproteina">
+    <meta name="author" content="IMCEPROTEINA.COM.BR">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.imceproteina.com.br/en">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.imceproteina.com.br/en">
+    <meta property="og:title" content="BMI, BMR & Protein Calculator | Health Guide">
+    <meta property="og:description" content="Discover your health metrics today. Calculate BMI, BMR, and Protein with scientific precision.">
+    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=BMI+AND+PROTEIN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.imceproteina.com.br/en">
+    <meta property="twitter:title" content="BMI, BMR & Protein Calculator">
+    <meta property="twitter:description" content="Complete tool to calculate your nutritional needs and body indices.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=BMI+AND+PROTEIN">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "IMCEPROTEINA Calculator",
+      "url": "https://www.imceproteina.com.br/en",
+      "description": "Free online tool for calculating Body Mass Index, Basal Metabolic Rate, and Protein Intake.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "featureList": ["BMI Calculation", "BMR Calculation", "Daily Protein Calculation"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is BMI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Body Mass Index (BMI) is an international measure used to calculate if a person is at their ideal weight."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How much protein should I eat per day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The amount varies according to your physical activity level, generally between 1.6g to 2.2g per kg of body weight for those who train."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to separate CSS file (shared) -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-slate-50 text-slate-800 smooth-scroll">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <i class="fa-solid fa-heart-pulse text-emerald-600 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl tracking-tight text-slate-800">BMI & <span class="text-emerald-600">PROTEIN</span></span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <!-- Menu Links (Desktop) -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#calculadora" class="text-slate-600 hover:text-emerald-600 font-medium transition">Calculators</a>
+                        <a href="#sobre-imc" class="text-slate-600 hover:text-emerald-600 font-medium transition">About BMI</a>
+                        <a href="#sobre-tmb" class="text-slate-600 hover:text-emerald-600 font-medium transition">About BMR</a>
+                        <a href="#sobre-proteina" class="text-slate-600 hover:text-emerald-600 font-medium transition">Protein</a>
+                    </div>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2 border-l pl-4 border-slate-200">
+                        <a href="index.html" class="text-slate-500 hover:text-emerald-600 font-medium transition" title="Português">PT</a>
+                        <span class="text-slate-300">|</span>
+                        <span class="font-bold text-emerald-600 cursor-default">EN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg pt-32 pb-20 px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Master Your Health & Nutrition</h1>
+            <p class="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+                The definitive tool from <strong>imceproteina.com.br</strong> to calculate your Body Mass Index, Basal Metabolic Rate, and daily protein needs with scientific precision.
+            </p>
+            <a href="#calculadora" class="inline-block bg-white text-emerald-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transform hover:-translate-y-1 transition duration-300">
+                Start Calculation Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-12 space-y-20">
+
+        <!-- CALCULATOR SECTION -->
+        <section id="calculadora" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+            <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200">
+                <h2 class="text-2xl font-bold text-center text-slate-800"><i class="fa-solid fa-calculator mr-2 text-emerald-600"></i> Unified Calculator</h2>
+                <p class="text-center text-slate-600 mt-2">Fill in your data once and get all results.</p>
+            </div>
+
+            <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Inputs Form -->
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Gender -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Biological Gender</label>
+                            <div class="flex space-x-4">
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="gender" value="male" class="peer sr-only" checked>
+                                    <div class="rounded-lg border-2 border-slate-200 p-3 text-center hover:border-emerald-400 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 peer-checked:text-emerald-700 transition">
+                                        <i class="fa-solid fa-mars mb-1"></i><br>Male
+                                    </div>
+                                </label>
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="gender" value="female" class="peer sr-only">
+                                    <div class="rounded-lg border-2 border-slate-200 p-3 text-center hover:border-emerald-400 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 peer-checked:text-emerald-700 transition">
+                                        <i class="fa-solid fa-venus mb-1"></i><br>Female
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Age -->
+                        <div>
+                            <label for="age" class="block text-sm font-medium text-slate-700 mb-2">Age (years)</label>
+                            <input type="number" id="age" placeholder="Ex: 30" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Weight -->
+                        <div>
+                            <label for="weight" class="block text-sm font-medium text-slate-700 mb-2">Weight (kg)</label>
+                            <input type="number" id="weight" step="0.1" placeholder="Ex: 75.5" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                        <!-- Height -->
+                        <div>
+                            <label for="height" class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</label>
+                            <input type="number" id="height" placeholder="Ex: 175" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <!-- Activity Level -->
+                    <div>
+                        <label for="activity" class="block text-sm font-medium text-slate-700 mb-2">Physical Activity Level</label>
+                        <select id="activity" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
+                            <option value="1.2">Sedentary (Little or no exercise)</option>
+                            <option value="1.375">Lightly Active (Light exercise 1-3 days/week)</option>
+                            <option value="1.55">Moderately Active (Moderate exercise 3-5 days/week)</option>
+                            <option value="1.725">Very Active (Hard exercise 6-7 days/week)</option>
+                            <option value="1.9">Extremely Active (Physical job or 2x training/day)</option>
+                        </select>
+                    </div>
+
+                    <!-- Goal -->
+                    <div>
+                        <label for="goal" class="block text-sm font-medium text-slate-700 mb-2">Primary Goal</label>
+                        <select id="goal" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
+                            <option value="lose">Lose Weight (Caloric Deficit)</option>
+                            <option value="maintain" selected>Maintain Weight (Maintenance)</option>
+                            <option value="gain">Gain Muscle (Caloric Surplus)</option>
+                        </select>
+                    </div>
+
+                    <button onclick="calculateAll()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg transform active:scale-95 transition duration-200 text-lg">
+                        Calculate My Results
+                    </button>
+                    
+                    <p id="error-msg" class="text-red-500 text-center hidden font-medium">Please fill in all fields correctly.</p>
+                </div>
+
+                <!-- Results Display -->
+                <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 relative">
+                    <div id="results-placeholder" class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-slate-50 z-10 rounded-xl">
+                        <i class="fa-solid fa-chart-pie text-5xl mb-4 text-slate-300"></i>
+                        <p>Fill in the data and click calculate.</p>
+                    </div>
+
+                    <div id="results-content" class="space-y-8 opacity-20 filter blur-sm transition duration-500">
+                        <!-- IMC Result -->
+                        <div class="border-b border-slate-200 pb-6">
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Your BMI (Body Mass Index)</h3>
+                            <div class="flex items-end items-baseline space-x-2">
+                                <span id="imc-value" class="text-4xl font-bold text-emerald-600">--</span>
+                                <span id="imc-class" class="text-lg font-medium text-slate-600">--</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-3">
+                                <div id="imc-bar" class="bg-emerald-600 h-2.5 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1 text-right">Normal Range: 18.5 - 24.9</p>
+                        </div>
+
+                        <!-- TMB & Calories -->
+                        <div class="border-b border-slate-200 pb-6">
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Metabolism and Daily Calories</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-100">
+                                    <p class="text-xs text-slate-500 uppercase font-bold">Basal Rate (BMR)</p>
+                                    <p class="text-2xl font-bold text-slate-800"><span id="tmb-value">--</span> <span class="text-sm font-normal text-slate-500">kcal</span></p>
+                                    <p class="text-xs text-slate-400 mt-1">At rest expenditure</p>
+                                </div>
+                                <div class="bg-emerald-50 p-3 rounded-lg shadow-sm border border-emerald-100">
+                                    <p class="text-xs text-emerald-600 uppercase font-bold">For your Goal</p>
+                                    <p class="text-2xl font-bold text-emerald-700"><span id="daily-cals">--</span> <span class="text-sm font-normal text-emerald-600">kcal</span></p>
+                                    <p class="text-xs text-emerald-600 mt-1 opacity-80" id="goal-text">Maintenance</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Protein -->
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Protein Recommendation</h3>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm text-blue-700 font-bold uppercase">Recommended Range</span>
+                                    <i class="fa-solid fa-drumstick-bite text-blue-400"></i>
+                                </div>
+                                <p class="text-3xl font-bold text-slate-800">
+                                    <span id="protein-min">--</span>g to <span id="protein-max">--</span>g
+                                </p>
+                                <p class="text-sm text-slate-600 mt-1">Total daily intake.</p>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-3 italic">
+                                *Based on <span id="protein-factor-text">--</span>g/kg of body weight.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO ARTICLE: IMC -->
+        <article id="sobre-imc" class="prose lg:prose-xl max-w-none text-slate-600">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-emerald-500 pl-4">Understanding Body Mass Index (BMI)</h2>
+            <p>
+                <strong>BMI</strong> is one of the most widely used metrics globally by the World Health Organization (WHO) for initial nutritional status screening. At <em>IMCEPROTEINA.COM.BR</em>, we use the standard formula: weight divided by height squared (kg/m²).
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 my-8">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Why calculate BMI?</h3>
+                    <p>The calculation helps identify risks associated with excess or lack of weight. Although it does not directly measure body fat, there is a strong correlation between a high BMI and metabolic problems.</p>
+                    <ul class="list-disc pl-5 space-y-2 mt-4">
+                        <li><strong>Below 18.5:</strong> Possible malnutrition or health issues.</li>
+                        <li><strong>18.5 to 24.9:</strong> Considered healthy weight (lower risk of cardiovascular diseases).</li>
+                        <li><strong>25.0 to 29.9:</strong> Overweight. Pay extra attention to diet.</li>
+                        <li><strong>30.0 or more:</strong> Obesity. Medical follow-up is recommended.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Limitations of BMI</h3>
+                    <p>It is important to note that BMI does not distinguish between muscle mass and fat. Very muscular athletes may have a high BMI ("overweight" category) even with a low body fat percentage. That is why combining it with the Protein and BMR calculation, which we offer here, is essential.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- SEO ARTICLE: TMB -->
+        <article id="sobre-tmb" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-blue-500 pl-4">What is Basal Metabolic Rate (BMR)?</h2>
+            <p>
+                The <strong>Basal Metabolic Rate</strong> represents the minimum amount of energy (calories) your body needs to survive at absolute rest — that is, to keep your heart beating, lungs breathing, and brain functioning.
+            </p>
+            <p class="mt-4">
+                In our calculator, we use the <em>Mifflin-St Jeor</em> equation, considered by the current scientific community as the most accurate for the majority of the population. Knowing your BMR is the first step to planning a diet, whether for weight loss or hypertrophy.
+            </p>
+            
+            <div class="bg-blue-50 p-6 rounded-xl my-8 border border-blue-100">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">BMR vs Total Caloric Expenditure</h3>
+                <p>
+                    Do not confuse BMR with Total Energy Expenditure (TEE). BMR is only resting. To know how much you can eat, we multiply the BMR by your <strong>Activity Factor</strong>. Our tool does this automatically to give you the real maintenance value.
+                </p>
+            </div>
+        </article>
+
+        <!-- SEO ARTICLE: PROTEIN -->
+        <article id="sobre-proteina" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-orange-500 pl-4">The Importance of Protein in the Diet</h2>
+            <p>
+                Whether to gain muscle mass or lose fat, <strong>protein intake</strong> is key. Proteins are the building blocks of muscles, skin, enzymes, and hormones.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 my-8">
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-emerald-500">
+                    <h4 class="font-bold text-lg mb-2">For Hypertrophy</h4>
+                    <p class="text-sm">To build muscle, the body needs a positive nitrogen balance. It is recommended between <strong>1.6g to 2.2g</strong> of protein per kg.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-yellow-500">
+                    <h4 class="font-bold text-lg mb-2">For Weight Loss</h4>
+                    <p class="text-sm">Protein has a high thermic effect and promotes satiety. Keeping intake high (above 1.8g/kg) helps preserve lean mass while losing fat.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-blue-500">
+                    <h4 class="font-bold text-lg mb-2">For Sedentary People</h4>
+                    <p class="text-sm">Even those who do not train need protein for cell repair. The WHO recommendation is at least <strong>0.8g to 1.0g</strong> per kg.</p>
+                </div>
+            </div>
+
+            <p>
+                The site <strong>IMCEPROTEINA.COM.BR</strong> automatically calculates the ideal range for you not to waste supplements or harm your results. Excellent sources include: chicken breast, eggs, fish, dairy, whey protein, soy, lentils, and beans.
+            </p>
+        </article>
+
+        <!-- FAQ Section (Great for Snippets) -->
+        <section class="bg-slate-100 rounded-2xl p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-slate-800 text-center mb-10">Frequently Asked Questions</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">Is the BMI calculator accurate for the elderly?</h3>
+                    <p class="text-slate-600 text-sm">BMI for the elderly has different classification ranges, as a little more weight reserve can be protective. Our calculator uses standard WHO ranges for adults (18-65 years).</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">How to increase my BMR?</h3>
+                    <p class="text-slate-600 text-sm">The most effective way to increase your Basal Metabolic Rate is by gaining muscle mass through strength exercises (weight training), as muscles consume more energy than fat, even at rest.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">Should I count plant protein?</h3>
+                    <p class="text-slate-600 text-sm">Yes! Although animal protein has a more complete amino acid profile, plant protein contributes to the daily total and is essential for health.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">What is the best time to eat protein?</h3>
+                    <p class="text-slate-600 text-sm">The daily total is the most important. However, distributing intake into 4 or 5 meals throughout the day optimizes protein synthesis.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Updated with Institutional Links -->
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <span class="font-bold text-xl text-white">BMI & <span class="text-emerald-500">PROTEIN</span></span>
+                <p class="mt-4 text-sm opacity-80">Your trusted source for health, nutrition, and wellness calculations. Optimized for your results.</p>
+                <p class="mt-2 text-sm text-emerald-500 font-semibold">www.imceproteina.com.br</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#calculadora" class="hover:text-emerald-400">Calculator</a></li>
+                    <li><a href="#sobre-imc" class="hover:text-emerald-400">BMI Table</a></li>
+                    <li><a href="#sobre-tmb" class="hover:text-emerald-400">Understand BMR</a></li>
+                    <li><a href="#sobre-proteina" class="hover:text-emerald-400">Protein Guide</a></li>
+                    <!-- New Links -->
+                    <li class="pt-2"><a href="about.html" class="hover:text-emerald-400">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-emerald-400">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="privacy.html" class="hover:text-emerald-400">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-emerald-400">Terms of Use</a></li>
+                </ul>
+                <p class="mt-6 text-xs opacity-50">&copy; 2024 IMCEPROTEINA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Logic -->
+    <script>
+        function calculateAll() {
+            // 1. Get Values
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const age = parseFloat(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const activity = parseFloat(document.getElementById('activity').value);
+            const goal = document.getElementById('goal').value;
+            const errorMsg = document.getElementById('error-msg');
+            
+            // 2. Validate
+            if (!age || !weight || !height) {
+                errorMsg.classList.remove('hidden');
+                return;
+            }
+            errorMsg.classList.add('hidden');
+
+            // --- IMC CALCULATION ---
+            // Formula: weight (kg) / (height (m) ^ 2)
+            const heightInMeters = height / 100;
+            const imc = weight / (heightInMeters * heightInMeters);
+            
+            let imcClass = "";
+            let barColor = "bg-emerald-600";
+            let barWidth = "0%";
+
+            if (imc < 18.5) {
+                imcClass = "Underweight";
+                barColor = "bg-blue-400";
+                barWidth = "20%";
+            } else if (imc < 24.9) {
+                imcClass = "Normal Weight";
+                barColor = "bg-emerald-500";
+                barWidth = "40%";
+            } else if (imc < 29.9) {
+                imcClass = "Overweight";
+                barColor = "bg-yellow-400";
+                barWidth = "60%";
+            } else if (imc < 34.9) {
+                imcClass = "Obesity Class I";
+                barColor = "bg-orange-500";
+                barWidth = "80%";
+            } else {
+                imcClass = "Obesity Class II/III";
+                barColor = "bg-red-600";
+                barWidth = "100%";
+            }
+
+            // --- TMB CALCULATION (Mifflin-St Jeor) ---
+            let tmb = 0;
+            if (gender === 'male') {
+                // (10 x weight) + (6.25 x height) - (5 x age) + 5
+                tmb = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                // (10 x weight) + (6.25 x height) - (5 x age) - 161
+                tmb = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+
+            // Total Daily Energy Expenditure (TDEE)
+            const tdee = tmb * activity;
+
+            // Goal Adjustment
+            let finalCalories = tdee;
+            let goalTextString = "";
+            
+            if (goal === 'lose') {
+                finalCalories = tdee - 500; // Deficit standard
+                goalTextString = "Caloric Deficit (Weight Loss)";
+            } else if (goal === 'gain') {
+                finalCalories = tdee + 300; // Surplus standard
+                goalTextString = "Caloric Surplus (Muscle Gain)";
+            } else {
+                goalTextString = "Weight Maintenance";
+            }
+
+            // --- PROTEIN CALCULATION ---
+            let proteinMinFactor = 0.8;
+            let proteinMaxFactor = 1.0;
+
+            // Logic based on activity and goal
+            if (activity <= 1.2) {
+                // Sedentary
+                proteinMinFactor = 0.8;
+                proteinMaxFactor = 1.0;
+            } else {
+                // Active people
+                if (goal === 'lose') {
+                    // High protein to save muscle during deficit
+                    proteinMinFactor = 1.8; 
+                    proteinMaxFactor = 2.4;
+                } else if (goal === 'gain') {
+                    // Hypertrophy
+                    proteinMinFactor = 1.6; 
+                    proteinMaxFactor = 2.2;
+                } else {
+                    // Maintenance / Moderate activity
+                    proteinMinFactor = 1.2; 
+                    proteinMaxFactor = 1.6;
+                }
+            }
+
+            const proteinMin = Math.round(weight * proteinMinFactor);
+            const proteinMax = Math.round(weight * proteinMaxFactor);
+            const proteinFactorText = `${proteinMinFactor} - ${proteinMaxFactor}`;
+
+
+            // 3. Update UI
+            // Reveal results
+            const placeholder = document.getElementById('results-placeholder');
+            const content = document.getElementById('results-content');
+            
+            placeholder.style.display = 'none';
+            content.classList.remove('opacity-20', 'filter', 'blur-sm');
+            
+            // Set Values
+            // IMC
+            document.getElementById('imc-value').innerText = imc.toFixed(1);
+            document.getElementById('imc-class').innerText = imcClass;
+            const barElement = document.getElementById('imc-bar');
+            barElement.className = `h-2.5 rounded-full transition-all duration-1000 ${barColor}`;
+            setTimeout(() => { barElement.style.width = barWidth; }, 100);
+
+            // TMB & Calories
+            document.getElementById('tmb-value').innerText = Math.round(tmb);
+            document.getElementById('daily-cals').innerText = Math.round(finalCalories);
+            document.getElementById('goal-text').innerText = goalTextString;
+
+            // Protein
+            document.getElementById('protein-min').innerText = proteinMin;
+            document.getElementById('protein-max').innerText = proteinMax;
+            document.getElementById('protein-factor-text').innerText = proteinFactorText;
+            
+            // Scroll to results on mobile
+            if(window.innerWidth < 1024) {
+                 document.getElementById('results-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+</body>
+</html>

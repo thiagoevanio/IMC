@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | IMCEPROTEINA.COM.BR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 smooth-scroll flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition">
+                    <i class="fa-solid fa-arrow-left text-emerald-600 mr-2"></i>
+                    <span class="font-bold text-lg text-slate-800">Voltar ao Início</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-12 flex-grow">
+        <div class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100">
+            <h1 class="text-3xl font-bold mb-6 text-slate-800 text-center">Entre em Contato</h1>
+            <p class="text-center text-slate-600 mb-10">Tem alguma dúvida, sugestão ou encontrou algum erro? Envie uma mensagem para nós.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-200">
+                    <i class="fa-solid fa-envelope text-3xl text-emerald-600 mb-3"></i>
+                    <h3 class="font-bold text-slate-800">E-mail</h3>
+                    <p class="text-sm text-slate-600 mt-2 break-all">contato@imceproteina.com.br</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-200">
+                    <i class="fa-brands fa-whatsapp text-3xl text-emerald-600 mb-3"></i>
+                    <h3 class="font-bold text-slate-800">Suporte</h3>
+                    <p class="text-sm text-slate-600 mt-2">Seg - Sex, 9h às 18h</p>
+                </div>
+            </div>
+
+            <!-- Formulário Simples (Mailto) -->
+            <form action="mailto:contato@imceproteina.com.br" method="post" enctype="text/plain" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Seu Nome</label>
+                    <input type="text" name="nome" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Assunto</label>
+                    <select name="assunto" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 outline-none bg-white">
+                        <option>Dúvida sobre a Calculadora</option>
+                        <option>Sugestão de Melhoria</option>
+                        <option>Parceria / Publicidade</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Mensagem</label>
+                    <textarea name="mensagem" rows="4" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg transition">
+                    Enviar Mensagem (Abrir E-mail)
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-8 text-center mt-auto">
+        <p>&copy; 2024 IMCEPROTEINA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

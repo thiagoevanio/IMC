@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC, TMB e Proteína | Guia Completo de Saúde - IMCEPROTEINA.COM.BR</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A ferramenta mais completa do Brasil. Calcule seu IMC, Taxa Metabólica Basal (TMB) e a quantidade ideal de Proteína diária para hipertrofia ou emagrecimento. Tudo em um só lugar.">
+    <meta name="keywords" content="calculadora imc, calcular tmb, proteina diaria, dieta hipertrofia, emagrecimento, calculo basal, macros, imceproteina">
+    <meta name="author" content="IMCEPROTEINA.COM.BR">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.imceproteina.com.br">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.imceproteina.com.br">
+    <meta property="og:title" content="Calculadora de IMC, TMB e Proteína | Guia de Saúde">
+    <meta property="og:description" content="Descubra suas métricas de saúde hoje. Calcule IMC, TMB e Proteína com precisão científica.">
+    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=IMC+E+PROTEINA">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.imceproteina.com.br">
+    <meta property="twitter:title" content="Calculadora de IMC, TMB e Proteína">
+    <meta property="twitter:description" content="Ferramenta completa para calcular suas necessidades nutricionais e índices corporais.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=IMC+E+PROTEINA">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora IMCEPROTEINA",
+      "url": "https://www.imceproteina.com.br",
+      "description": "Ferramenta online gratuita para cálculo de Índice de Massa Corporal, Taxa Metabólica Basal e Ingestão Proteica.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "featureList": ["Cálculo de IMC", "Cálculo de TMB", "Cálculo de Proteína Diária"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "O que é IMC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Quanta proteína devo comer por dia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A quantidade varia de acordo com seu nível de atividade física, geralmente entre 1.6g a 2.2g por kg de peso corporal para quem treina."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS separado -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-slate-50 text-slate-800 smooth-scroll">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <i class="fa-solid fa-heart-pulse text-emerald-600 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl tracking-tight text-slate-800">IMC E <span class="text-emerald-600">PROTEÍNA</span></span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <!-- Menu Links (Desktop) -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#calculadora" class="text-slate-600 hover:text-emerald-600 font-medium transition">Calculadoras</a>
+                        <a href="#sobre-imc" class="text-slate-600 hover:text-emerald-600 font-medium transition">Sobre IMC</a>
+                        <a href="#sobre-tmb" class="text-slate-600 hover:text-emerald-600 font-medium transition">Sobre TMB</a>
+                        <a href="#sobre-proteina" class="text-slate-600 hover:text-emerald-600 font-medium transition">Proteína</a>
+                    </div>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2 border-l pl-4 border-slate-200">
+                        <span class="font-bold text-emerald-600 cursor-default">PT</span>
+                        <span class="text-slate-300">|</span>
+                        <a href="index_en.html" class="text-slate-500 hover:text-emerald-600 font-medium transition" title="English">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg pt-32 pb-20 px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Domine sua Saúde e Nutrição</h1>
+            <p class="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+                A ferramenta definitiva do <strong>imceproteina.com.br</strong> para calcular seu Índice de Massa Corporal, Taxa Metabólica Basal e necessidade diária de proteínas com precisão científica.
+            </p>
+            <a href="#calculadora" class="inline-block bg-white text-emerald-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transform hover:-translate-y-1 transition duration-300">
+                Começar Cálculo Agora
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-12 space-y-20">
+
+        <!-- CALCULATOR SECTION -->
+        <section id="calculadora" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+            <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200">
+                <h2 class="text-2xl font-bold text-center text-slate-800"><i class="fa-solid fa-calculator mr-2 text-emerald-600"></i> Calculadora Unificada</h2>
+                <p class="text-center text-slate-600 mt-2">Preencha seus dados uma vez e obtenha todos os resultados.</p>
+            </div>
+
+            <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Inputs Form -->
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Gênero -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Gênero Biológico</label>
+                            <div class="flex space-x-4">
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="gender" value="male" class="peer sr-only" checked>
+                                    <div class="rounded-lg border-2 border-slate-200 p-3 text-center hover:border-emerald-400 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 peer-checked:text-emerald-700 transition">
+                                        <i class="fa-solid fa-mars mb-1"></i><br>Homem
+                                    </div>
+                                </label>
+                                <label class="flex-1 cursor-pointer">
+                                    <input type="radio" name="gender" value="female" class="peer sr-only">
+                                    <div class="rounded-lg border-2 border-slate-200 p-3 text-center hover:border-emerald-400 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 peer-checked:text-emerald-700 transition">
+                                        <i class="fa-solid fa-venus mb-1"></i><br>Mulher
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Idade -->
+                        <div>
+                            <label for="age" class="block text-sm font-medium text-slate-700 mb-2">Idade (anos)</label>
+                            <input type="number" id="age" placeholder="Ex: 30" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Peso -->
+                        <div>
+                            <label for="weight" class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</label>
+                            <input type="number" id="weight" step="0.1" placeholder="Ex: 75.5" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                        <!-- Altura -->
+                        <div>
+                            <label for="height" class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</label>
+                            <input type="number" id="height" placeholder="Ex: 175" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                    </div>
+
+                    <!-- Nível de Atividade -->
+                    <div>
+                        <label for="activity" class="block text-sm font-medium text-slate-700 mb-2">Nível de Atividade Física</label>
+                        <select id="activity" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
+                            <option value="1.2">Sedentário (Pouco ou nenhum exercício)</option>
+                            <option value="1.375">Levemente Ativo (Exercício leve 1-3 dias/sem)</option>
+                            <option value="1.55">Moderadamente Ativo (Exercício mod 3-5 dias/sem)</option>
+                            <option value="1.725">Muito Ativo (Exercício pesado 6-7 dias/sem)</option>
+                            <option value="1.9">Extremamente Ativo (Trabalho físico pesado ou treino 2x dia)</option>
+                        </select>
+                    </div>
+
+                    <!-- Objetivo -->
+                    <div>
+                        <label for="goal" class="block text-sm font-medium text-slate-700 mb-2">Objetivo Principal</label>
+                        <select id="goal" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
+                            <option value="lose">Perder Peso (Deficit Calórico)</option>
+                            <option value="maintain" selected>Manter Peso (Manutenção)</option>
+                            <option value="gain">Ganhar Massa (Superávit Calórico)</option>
+                        </select>
+                    </div>
+
+                    <button onclick="calculateAll()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg transform active:scale-95 transition duration-200 text-lg">
+                        Calcular Meus Resultados
+                    </button>
+                    
+                    <p id="error-msg" class="text-red-500 text-center hidden font-medium">Por favor, preencha todos os campos corretamente.</p>
+                </div>
+
+                <!-- Results Display -->
+                <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 relative">
+                    <div id="results-placeholder" class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-slate-50 z-10 rounded-xl">
+                        <i class="fa-solid fa-chart-pie text-5xl mb-4 text-slate-300"></i>
+                        <p>Preencha os dados ao lado e clique em calcular.</p>
+                    </div>
+
+                    <div id="results-content" class="space-y-8 opacity-20 filter blur-sm transition duration-500">
+                        <!-- IMC Result -->
+                        <div class="border-b border-slate-200 pb-6">
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Seu IMC (Índice de Massa Corporal)</h3>
+                            <div class="flex items-end items-baseline space-x-2">
+                                <span id="imc-value" class="text-4xl font-bold text-emerald-600">--</span>
+                                <span id="imc-class" class="text-lg font-medium text-slate-600">--</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-3">
+                                <div id="imc-bar" class="bg-emerald-600 h-2.5 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1 text-right">Faixa Normal: 18.5 - 24.9</p>
+                        </div>
+
+                        <!-- TMB & Calories -->
+                        <div class="border-b border-slate-200 pb-6">
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Metabolismo e Calorias Diárias</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-100">
+                                    <p class="text-xs text-slate-500 uppercase font-bold">Taxa Basal (TMB)</p>
+                                    <p class="text-2xl font-bold text-slate-800"><span id="tmb-value">--</span> <span class="text-sm font-normal text-slate-500">kcal</span></p>
+                                    <p class="text-xs text-slate-400 mt-1">Gasto em repouso</p>
+                                </div>
+                                <div class="bg-emerald-50 p-3 rounded-lg shadow-sm border border-emerald-100">
+                                    <p class="text-xs text-emerald-600 uppercase font-bold">Para seu Objetivo</p>
+                                    <p class="text-2xl font-bold text-emerald-700"><span id="daily-cals">--</span> <span class="text-sm font-normal text-emerald-600">kcal</span></p>
+                                    <p class="text-xs text-emerald-600 mt-1 opacity-80" id="goal-text">Manutenção</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Protein -->
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-700 mb-2">Recomendação de Proteína</h3>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm text-blue-700 font-bold uppercase">Faixa Recomendada</span>
+                                    <i class="fa-solid fa-drumstick-bite text-blue-400"></i>
+                                </div>
+                                <p class="text-3xl font-bold text-slate-800">
+                                    <span id="protein-min">--</span>g a <span id="protein-max">--</span>g
+                                </p>
+                                <p class="text-sm text-slate-600 mt-1">Consumo diário total.</p>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-3 italic">
+                                *Baseado em <span id="protein-factor-text">--</span>g/kg de peso corporal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO ARTICLE: IMC -->
+        <article id="sobre-imc" class="prose lg:prose-xl max-w-none text-slate-600">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-emerald-500 pl-4">Entendendo o Índice de Massa Corporal (IMC)</h2>
+            <p>
+                O <strong>IMC</strong> é uma das métricas mais utilizadas mundialmente pela Organização Mundial da Saúde (OMS) para triagem inicial do estado nutricional. No <em>IMCEPROTEINA.COM.BR</em>, utilizamos a fórmula padrão: peso dividido pela altura ao quadrado (kg/m²).
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 my-8">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Por que calcular o IMC?</h3>
+                    <p>O cálculo permite identificar riscos associados ao excesso ou falta de peso. Embora não meça diretamente a gordura corporal, há uma forte correlação entre um IMC elevado e problemas metabólicos.</p>
+                    <ul class="list-disc pl-5 space-y-2 mt-4">
+                        <li><strong>Abaixo de 18,5:</strong> Possível desnutrição ou problemas de saúde.</li>
+                        <li><strong>18,5 a 24,9:</strong> Peso considerado saudável (menor risco de doenças cardiovasculares).</li>
+                        <li><strong>25,0 a 29,9:</strong> Sobrepeso. Atenção redobrada com alimentação.</li>
+                        <li><strong>30,0 ou mais:</strong> Obesidade. Recomenda-se acompanhamento médico.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Limitações do IMC</h3>
+                    <p>É importante notar que o IMC não distingue massa muscular de gordura. Atletas muito musculosos podem ter um IMC alto (categoria "sobrepeso") mesmo com baixo percentual de gordura. Por isso, a combinação com o cálculo de proteína e TMB, que oferecemos aqui, é essencial.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- SEO ARTICLE: TMB -->
+        <article id="sobre-tmb" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-blue-500 pl-4">O que é Taxa Metabólica Basal (TMB)?</h2>
+            <p>
+                A <strong>Taxa Metabólica Basal</strong> representa a quantidade mínima de energia (calorias) que seu corpo precisa para sobreviver em repouso absoluto — ou seja, para manter o coração batendo, os pulmões respirando e o cérebro funcionando.
+            </p>
+            <p class="mt-4">
+                Em nossa calculadora, utilizamos a equação de <em>Mifflin-St Jeor</em>, considerada pela comunidade científica atual como a mais precisa para a maioria da população. Saber sua TMB é o primeiro passo para montar uma dieta, seja para emagrecimento ou hipertrofia.
+            </p>
+            
+            <div class="bg-blue-50 p-6 rounded-xl my-8 border border-blue-100">
+                <h3 class="text-xl font-bold text-blue-800 mb-3">TMB vs Gasto Calórico Total</h3>
+                <p>
+                    Não confunda TMB com Gasto Calórico Total (GET). A TMB é apenas o repouso. Para saber quanto você pode comer, multiplicamos a TMB pelo seu <strong>Fator de Atividade</strong>. Nossa ferramenta faz isso automaticamente para lhe dar o valor real de manutenção.
+                </p>
+            </div>
+        </article>
+
+        <!-- SEO ARTICLE: PROTEIN -->
+        <article id="sobre-proteina" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-orange-500 pl-4">A Importância da Proteína na Dieta</h2>
+            <p>
+                Seja para ganhar massa muscular ou perder gordura, a <strong>ingestão de proteína</strong> é a chave. As proteínas são os blocos de construção dos músculos, pele, enzimas e hormônios.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 my-8">
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-emerald-500">
+                    <h4 class="font-bold text-lg mb-2">Para Hipertrofia</h4>
+                    <p class="text-sm">Para construir músculos, o corpo precisa de um balanço nitrogenado positivo. Recomenda-se entre <strong>1.6g a 2.2g</strong> de proteína por kg.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-yellow-500">
+                    <h4 class="font-bold text-lg mb-2">Para Emagrecimento</h4>
+                    <p class="text-sm">A proteína tem alto efeito térmico e promove saciedade. Manter a ingestão alta (acima de 1.8g/kg) ajuda a preservar a massa magra enquanto perde gordura.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-blue-500">
+                    <h4 class="font-bold text-lg mb-2">Para Sedentários</h4>
+                    <p class="text-sm">Mesmo quem não treina precisa de proteína para reparo celular. A recomendação da OMS é de pelo menos <strong>0.8g a 1.0g</strong> por kg.</p>
+                </div>
+            </div>
+
+            <p>
+                O site <strong>IMCEPROTEINA.COM.BR</strong> calcula automaticamente a faixa ideal para você não desperdiçar suplementos nem prejudicar seus resultados. Fontes excelentes incluem: peito de frango, ovos, peixes, laticínios, whey protein, soja, lentilha e feijões.
+            </p>
+        </article>
+
+        <!-- FAQ Section (Great for Snippets) -->
+        <section class="bg-slate-100 rounded-2xl p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-slate-800 text-center mb-10">Perguntas Frequentes</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">A calculadora de IMC é precisa para idosos?</h3>
+                    <p class="text-slate-600 text-sm">O IMC para idosos tem faixas de classificação diferentes, pois um pouco mais de reserva de peso pode ser protetor. Nossa calculadora usa as faixas padrão da OMS para adultos (18-65 anos).</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">Como aumentar minha TMB?</h3>
+                    <p class="text-slate-600 text-sm">A forma mais eficaz de aumentar sua Taxa Metabólica Basal é ganhando massa muscular através de exercícios de força (musculação), pois músculos consomem mais energia que gordura, mesmo em repouso.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">Devo contar proteína vegetal?</h3>
+                    <p class="text-slate-600 text-sm">Sim! Embora a proteína animal tenha um perfil de aminoácidos mais completo, a proteína vegetal contribui para o total diário e é essencial para a saúde.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-700 mb-2">Qual o melhor horário para comer proteína?</h3>
+                    <p class="text-slate-600 text-sm">O total diário é o mais importante. No entanto, distribuir a ingestão em 4 ou 5 refeições ao longo do dia otimiza a síntese proteica.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Atualizado com Links Institucionais -->
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <span class="font-bold text-xl text-white">IMC E <span class="text-emerald-500">PROTEÍNA</span></span>
+                <p class="mt-4 text-sm opacity-80">Sua fonte confiável para cálculos de saúde, nutrição e bem-estar. Otimizado para seus resultados.</p>
+                <p class="mt-2 text-sm text-emerald-500 font-semibold">www.imceproteina.com.br</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Links Rápidos</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#calculadora" class="hover:text-emerald-400">Calculadora</a></li>
+                    <li><a href="#sobre-imc" class="hover:text-emerald-400">Tabela IMC</a></li>
+                    <li><a href="#sobre-tmb" class="hover:text-emerald-400">Entenda a TMB</a></li>
+                    <li><a href="#sobre-proteina" class="hover:text-emerald-400">Guia de Proteínas</a></li>
+                    <!-- Novos Links -->
+                    <li class="pt-2"><a href="sobre.html" class="hover:text-emerald-400">Sobre Nós</a></li>
+                    <li><a href="contato.html" class="hover:text-emerald-400">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="politica.html" class="hover:text-emerald-400">Política de Privacidade</a></li>
+                    <li><a href="termos.html" class="hover:text-emerald-400">Termos de Uso</a></li>
+                </ul>
+                <p class="mt-6 text-xs opacity-50">&copy; 2024 IMCEPROTEINA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Logic -->
+    <script>
+        function calculateAll() {
+            // 1. Get Values
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const age = parseFloat(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const activity = parseFloat(document.getElementById('activity').value);
+            const goal = document.getElementById('goal').value;
+            const errorMsg = document.getElementById('error-msg');
+            
+            // 2. Validate
+            if (!age || !weight || !height) {
+                errorMsg.classList.remove('hidden');
+                return;
+            }
+            errorMsg.classList.add('hidden');
+
+            // --- IMC CALCULATION ---
+            // Formula: weight (kg) / (height (m) ^ 2)
+            const heightInMeters = height / 100;
+            const imc = weight / (heightInMeters * heightInMeters);
+            
+            let imcClass = "";
+            let barColor = "bg-emerald-600";
+            let barWidth = "0%";
+
+            if (imc < 18.5) {
+                imcClass = "Abaixo do Peso";
+                barColor = "bg-blue-400";
+                barWidth = "20%";
+            } else if (imc < 24.9) {
+                imcClass = "Peso Normal";
+                barColor = "bg-emerald-500";
+                barWidth = "40%";
+            } else if (imc < 29.9) {
+                imcClass = "Sobrepeso";
+                barColor = "bg-yellow-400";
+                barWidth = "60%";
+            } else if (imc < 34.9) {
+                imcClass = "Obesidade Grau I";
+                barColor = "bg-orange-500";
+                barWidth = "80%";
+            } else {
+                imcClass = "Obesidade Grau II/III";
+                barColor = "bg-red-600";
+                barWidth = "100%";
+            }
+
+            // --- TMB CALCULATION (Mifflin-St Jeor) ---
+            let tmb = 0;
+            if (gender === 'male') {
+                // (10 x weight) + (6.25 x height) - (5 x age) + 5
+                tmb = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                // (10 x weight) + (6.25 x height) - (5 x age) - 161
+                tmb = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+
+            // Total Daily Energy Expenditure (TDEE)
+            const tdee = tmb * activity;
+
+            // Goal Adjustment
+            let finalCalories = tdee;
+            let goalTextString = "";
+            
+            if (goal === 'lose') {
+                finalCalories = tdee - 500; // Deficit standard
+                goalTextString = "Déficit Calórico (Emagrecimento)";
+            } else if (goal === 'gain') {
+                finalCalories = tdee + 300; // Surplus standard
+                goalTextString = "Superávit Calórico (Ganho de Massa)";
+            } else {
+                goalTextString = "Manutenção de Peso";
+            }
+
+            // --- PROTEIN CALCULATION ---
+            let proteinMinFactor = 0.8;
+            let proteinMaxFactor = 1.0;
+
+            // Logic based on activity and goal
+            if (activity <= 1.2) {
+                // Sedentary
+                proteinMinFactor = 0.8;
+                proteinMaxFactor = 1.0;
+            } else {
+                // Active people
+                if (goal === 'lose') {
+                    // High protein to save muscle during deficit
+                    proteinMinFactor = 1.8; 
+                    proteinMaxFactor = 2.4;
+                } else if (goal === 'gain') {
+                    // Hypertrophy
+                    proteinMinFactor = 1.6; 
+                    proteinMaxFactor = 2.2;
+                } else {
+                    // Maintenance / Moderate activity
+                    proteinMinFactor = 1.2; 
+                    proteinMaxFactor = 1.6;
+                }
+            }
+
+            const proteinMin = Math.round(weight * proteinMinFactor);
+            const proteinMax = Math.round(weight * proteinMaxFactor);
+            const proteinFactorText = `${proteinMinFactor} - ${proteinMaxFactor}`;
+
+
+            // 3. Update UI
+            // Reveal results
+            const placeholder = document.getElementById('results-placeholder');
+            const content = document.getElementById('results-content');
+            
+            placeholder.style.display = 'none';
+            content.classList.remove('opacity-20', 'filter', 'blur-sm');
+            
+            // Set Values
+            // IMC
+            document.getElementById('imc-value').innerText = imc.toFixed(1);
+            document.getElementById('imc-class').innerText = imcClass;
+            const barElement = document.getElementById('imc-bar');
+            barElement.className = `h-2.5 rounded-full transition-all duration-1000 ${barColor}`;
+            setTimeout(() => { barElement.style.width = barWidth; }, 100);
+
+            // TMB & Calories
+            document.getElementById('tmb-value').innerText = Math.round(tmb);
+            document.getElementById('daily-cals').innerText = Math.round(finalCalories);
+            document.getElementById('goal-text').innerText = goalTextString;
+
+            // Protein
+            document.getElementById('protein-min').innerText = proteinMin;
+            document.getElementById('protein-max').innerText = proteinMax;
+            document.getElementById('protein-factor-text').innerText = proteinFactorText;
+            
+            // Scroll to results on mobile
+            if(window.innerWidth < 1024) {
+                 document.getElementById('results-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+</body>
+</html>
