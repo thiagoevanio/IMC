@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+  <!-- Index -->
   <url>
     <loc>https://www.imceproteina.com.br/</loc>
     <lastmod>2025-12-29</lastmod>
@@ -16,28 +17,72 @@
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/index_en.html"/>
   </url>
+  <!-- Sobre / About -->
   <url>
     <loc>https://www.imceproteina.com.br/sobre.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/about.html"/>
   </url>
+  <url>
+    <loc>https://www.imceproteina.com.br/about.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/about.html"/>
+  </url>
+  <!-- Contato / Contact -->
   <url>
     <loc>https://www.imceproteina.com.br/contato.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/contact.html"/>
   </url>
+  <url>
+    <loc>https://www.imceproteina.com.br/contact.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/contact.html"/>
+  </url>
+  <!-- Politica / Privacy -->
   <url>
     <loc>https://www.imceproteina.com.br/politica.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/politica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/privacy.html"/>
   </url>
+  <url>
+    <loc>https://www.imceproteina.com.br/privacy.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/politica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/privacy.html"/>
+  </url>
+  <!-- Termos / Terms -->
   <url>
     <loc>https://www.imceproteina.com.br/termos.html</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/terms.html"/>
+  </url>
+  <url>
+    <loc>https://www.imceproteina.com.br/terms.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.imceproteina.com.br/termos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.imceproteina.com.br/terms.html"/>
   </url>
 </urlset>
