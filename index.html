@@ -14,14 +14,14 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1QS0CPCR1T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QS0CPCR1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-1QS0CPCR1T');
-</script>
+      gtag('config', 'G-1QS0CPCR1T');
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -79,7 +79,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Link para o arquivo CSS separado -->
+    <!-- Link CSS -->
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -89,28 +89,54 @@
     <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
+                <!-- Logo -->
                 <div class="flex items-center">
                     <a href="#" class="flex-shrink-0 flex items-center">
                         <i class="fa-solid fa-heart-pulse text-emerald-600 text-2xl mr-2"></i>
                         <span class="font-bold text-xl tracking-tight text-slate-800">IMC E <span class="text-emerald-600">PROTEÍNA</span></span>
                     </a>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <!-- Menu Links (Desktop) -->
-                    <div class="hidden md:flex items-center space-x-8">
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="flex items-center space-x-8">
                         <a href="#calculadora" class="text-slate-600 hover:text-emerald-600 font-medium transition">Calculadoras</a>
                         <a href="#sobre-imc" class="text-slate-600 hover:text-emerald-600 font-medium transition">Sobre IMC</a>
                         <a href="#sobre-tmb" class="text-slate-600 hover:text-emerald-600 font-medium transition">Sobre TMB</a>
                         <a href="#sobre-proteina" class="text-slate-600 hover:text-emerald-600 font-medium transition">Proteína</a>
                     </div>
-                    
-                    <!-- Language Switcher -->
+                    <!-- Language Switcher Desktop -->
                     <div class="flex items-center space-x-2 border-l pl-4 border-slate-200">
                         <span class="font-bold text-emerald-600 cursor-default">PT</span>
                         <span class="text-slate-300">|</span>
                         <a href="index_en.html" class="text-slate-500 hover:text-emerald-600 font-medium transition" title="English">EN</a>
                     </div>
                 </div>
+
+                <!-- Mobile Menu Button (Hamburguer) -->
+                <div class="flex items-center md:hidden">
+                    <!-- Language Switcher Mobile -->
+                    <div class="flex items-center space-x-2 mr-4 border-r pr-4 border-slate-200">
+                        <span class="font-bold text-emerald-600 text-sm">PT</span>
+                        <a href="index_en.html" class="text-slate-500 text-sm">EN</a>
+                    </div>
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-emerald-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#calculadora" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Calculadora</a>
+                <a href="#sobre-imc" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Tabela IMC</a>
+                <a href="#sobre-tmb" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Sobre TMB</a>
+                <a href="#sobre-proteina" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Guia Proteína</a>
+                <hr class="my-2 border-slate-100">
+                <a href="sobre.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Sobre Nós</a>
+                <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Contato</a>
             </div>
         </div>
     </nav>
@@ -365,7 +391,7 @@
 
     </main>
 
-    <!-- Footer Atualizado com Links Institucionais -->
+    <!-- Footer -->
     <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
             <div>
@@ -398,6 +424,24 @@
 
     <!-- Scripts Logic -->
     <script>
+        // Lógica do Menu Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Fechar menu ao clicar em um link
+            const links = menu.querySelectorAll('.mobile-link');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+
         function calculateAll() {
             // 1. Get Values
             const gender = document.querySelector('input[name="gender"]:checked').value;
@@ -537,6 +581,4 @@
         }
     </script>
 </body>
-
 </html>
-
