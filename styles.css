@@ -1,31 +1,221 @@
+/*
+  styles.css — Visual + Mobile Upgrade
+  - Mantém Tailwind como base, mas melhora tipografia, contraste, cards e mobile.
+  - Importante: este arquivo é carregado DEPOIS do Tailwind no seu <head>, então pode sobrescrever utilitários.
+*/
+
+:root {
+  --brand: #10b981;
+  --brand-2: #059669;
+  --brand-dark: #047857;
+  --text: #0f172a;
+  --muted: #475569;
+  --ring: rgba(16, 185, 129, 0.35);
+  --nav-h: 4rem; /* h-16 */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 1rem);
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+
+  /* Fundo mais “premium”, sem depender de imagem */
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(16, 185, 129, 0.14), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(59, 130, 246, 0.10), transparent 55%),
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
-/* Fundo em gradiente do hero */
-.gradient-bg {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-}
-
-/* Scroll suave */
+/* Scroll suave (mantém sua classe) */
 .smooth-scroll {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/* Corrige problema de âncoras com nav fixed */
+/* Corrige âncoras com nav fixed */
 section,
 article {
-    scroll-margin-top: 4.5rem; /* altura do menu */
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
+}
+
+/* Hero com gradiente + textura leve */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 45%, var(--brand-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-bg::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background:
+    radial-gradient(800px 400px at 20% 25%, rgba(255, 255, 255, 0.18), transparent 60%),
+    radial-gradient(600px 360px at 80% 10%, rgba(255, 255, 255, 0.10), transparent 55%),
+    radial-gradient(500px 300px at 70% 80%, rgba(0, 0, 0, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
+.gradient-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-bg h1 {
+  text-shadow: 0 12px 30px rgba(2, 6, 23, 0.25);
+}
+
+.gradient-bg p {
+  text-shadow: 0 10px 24px rgba(2, 6, 23, 0.18);
+}
+
+/* Nav mais bonito + blur */
+nav.bg-white.shadow-md {
+  background: rgba(255, 255, 255, 0.86);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Mobile: melhora “toque” e evita zoom no iOS ao focar inputs */
+@media (max-width: 640px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .gradient-bg {
+    padding-top: 6.5rem !important; /* melhora encaixe com nav fixa */
+    padding-bottom: 4rem !important;
+  }
+
+  .gradient-bg h1 {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em;
+  }
+
+  .gradient-bg p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* Foco acessível e bonito */
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Inputs: refinamento visual (sem brigar com Tailwind) */
+input,
+select,
+textarea {
+  border-radius: 0.85rem;
+}
+
+input::placeholder {
+  color: rgba(71, 85, 105, 0.65);
+}
+
+/* Botões: sensação “clicável” no mobile */
+button,
+a {
+  touch-action: manipulation;
+}
+
+button {
+  letter-spacing: 0.01em;
+}
+
+/* Cards das calculadoras: hover suave (desktop) */
+#calculators section[id$="-calculator"] {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+@media (hover: hover) {
+  #calculators section[id$="-calculator"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.10);
+    border-color: rgba(16, 185, 129, 0.25);
+  }
+}
+
+/* Quick links (chips) mais consistentes */
+#calculators nav a {
+  box-shadow: 0 1px 0 rgba(2, 6, 23, 0.04);
+}
+
+/* FAQ details: indicador + melhor toque */
+details > summary {
+  list-style: none;
+  user-select: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  content: "+";
+  float: right;
+  font-weight: 800;
+  color: rgba(16, 185, 129, 0.9);
+}
+
+details[open] > summary::after {
+  content: "–";
+}
+
+/* Prose: links e headings mais alinhados com a marca */
+.prose a {
+  color: var(--brand-2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.prose a:hover {
+  border-bottom-color: rgba(16, 185, 129, 0.8);
+}
+
+.prose h2,
+.prose h3 {
+  letter-spacing: -0.01em;
+}
+
+/* Ajustes finos para listas no mobile */
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1rem;
+  }
+
+  .prose h2 {
+    font-size: 1.55rem;
+    line-height: 1.2;
+  }
+
+  .prose h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Esconder setas dos inputs number (Chrome, Edge, Safari) */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Esconder setas no Firefox */
 input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
