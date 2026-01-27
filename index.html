@@ -1,1019 +1,900 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-adsense-account" content="ca-pub-5825554897787593">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="google-adsense-account" content="ca-pub-5825554897787593" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- EN-first SEO -->
-    <title>Health Calculators: BMI, BMR, TDEE, Body Fat % & Ideal Weight | IMCEPROTEINA.COM.BR</title>
-    <meta name="description" content="Free health calculators in one page: BMI (IMC), BMR (Basal Metabolic Rate), TDEE (Maintenance Calories), U.S. Navy Body Fat %, and Ideal Weight (Devine, Robinson, Miller). Educational estimates." />
-    <meta name="author" content="IMCEPROTEINA.COM.BR">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#10b981">
+  <!-- SEO (PT-BR) -->
+  <title>Calculadoras de IMC, Proteína, TMB, TDEE, Gordura Corporal, Peso Ideal, IMC Infantil e Data Provável do Parto | IMCEPROTEINA.COM.BR</title>
+  <meta name="description" content="Calculadoras gratuitas em uma página: IMC (adulto), proteína (g/dia), IMC infantil (percentil/z-score OMS), TMB (Mifflin-St Jeor), TDEE (manutenção), % gordura (método Marinha EUA), peso ideal (Devine/Robinson/Miller) e data provável do parto (DPP). Resultados educacionais." />
+  <meta name="keywords" content="imc, calculadora de imc, proteína por dia, calculadora de proteína, tmb, taxa metabólica basal, tdee, calorias de manutenção, percentual de gordura, marinha americana, peso ideal, imc infantil, percentil imc, z-score oms, data provável do parto, dpp, dum" />
+  <meta name="author" content="IMCEPROTEINA.COM.BR" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#10b981" />
 
-    <link rel="canonical" href="https://www.imceproteina.com.br/">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://www.imceproteina.com.br/" />
+  <!-- Nota: Certifique-se de que favicon.svg existe na pasta -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-    <!-- hreflang -->
-    <link rel="alternate" href="https://www.imceproteina.com.br/" hreflang="pt-BR">
-    <link rel="alternate" href="https://www.imceproteina.com.br/index_en.html" hreflang="en">
-    <link rel="alternate" href="https://www.imceproteina.com.br/" hreflang="x-default">
+  <!-- hreflang -->
+  <link rel="alternate" href="https://www.imceproteina.com.br/" hreflang="pt-BR" />
+  <link rel="alternate" href="https://www.imceproteina.com.br/index_en.html" hreflang="en" />
+  <link rel="alternate" href="https://www.imceproteina.com.br/" hreflang="x-default" />
 
-    <!-- Preconnects (performance basics) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
 
-    <!-- Ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5825554897787593" crossorigin="anonymous"></script>
+  <!-- Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5825554897787593" crossorigin="anonymous"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QS0CPCR1T"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-1QS0CPCR1T');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QS0CPCR1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1QS0CPCR1T');
+  </script>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.imceproteina.com.br/">
-    <meta property="og:title" content="Health Calculators: BMI, BMR, TDEE, Body Fat % & Ideal Weight">
-    <meta property="og:description" content="Free calculators: BMI, BMR, TDEE, U.S. Navy Body Fat %, and Ideal Weight formulas. Educational estimates.">
-    <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Health+Calculators">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.imceproteina.com.br/" />
+  <meta property="og:title" content="Calculadoras de IMC, Proteína, TMB/TDEE, IMC Infantil e DPP" />
+  <meta property="og:description" content="Calculadoras gratuitas: IMC (adulto e infantil OMS), proteína (g/dia), TMB, TDEE, % gordura, peso ideal e data provável do parto. Estimativas educacionais." />
+  <meta property="og:image" content="https://placehold.co/1200x630/10b981/ffffff?text=IMC+e+Prote%C3%ADna" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.imceproteina.com.br/">
-    <meta property="twitter:title" content="Health Calculators: BMI, BMR, TDEE, Body Fat % & Ideal Weight">
-    <meta property="twitter:description" content="Free calculators: BMI, BMR, TDEE, U.S. Navy Body Fat %, and Ideal Weight formulas.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=Health+Calculators">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.imceproteina.com.br/" />
+  <meta property="twitter:title" content="IMC e Proteína: calculadoras de saúde em PT-BR" />
+  <meta property="twitter:description" content="IMC, proteína, TMB, TDEE, % gordura, peso ideal, IMC infantil (OMS) e DPP. Estimativas educacionais." />
+  <meta property="twitter:image" content="https://placehold.co/1200x630/10b981/ffffff?text=IMC+e+Prote%C3%ADna" />
 
-    <!-- Schema.org JSON-LD (WebPage + FAQPage + SoftwareApplication) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://www.imceproteina.com.br/#org",
-          "name": "IMCEPROTEINA.COM.BR",
-          "url": "https://www.imceproteina.com.br/"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.imceproteina.com.br/#website",
-          "url": "https://www.imceproteina.com.br/",
-          "name": "IMC e Proteína",
-          "publisher": { "@id": "https://www.imceproteina.com.br/#org" },
-          "inLanguage": "pt-BR"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.imceproteina.com.br/#webpage",
-          "url": "https://www.imceproteina.com.br/",
-          "name": "Health Calculators: BMI, BMR, TDEE, Body Fat % & Ideal Weight",
-          "description": "Free health calculators in one page: BMI (IMC), BMR, TDEE, U.S. Navy Body Fat %, and Ideal Weight formulas. Educational estimates.",
-          "isPartOf": { "@id": "https://www.imceproteina.com.br/#website" },
-          "publisher": { "@id": "https://www.imceproteina.com.br/#org" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://www.imceproteina.com.br/#faq",
-          "inLanguage": "en",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Are these calculators accurate?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "They are estimates based on widely used formulas. Accuracy varies by individual and measurement quality."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between BMR and TDEE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "BMR estimates calories at rest. TDEE estimates daily calories by multiplying BMR by an activity factor."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is this medical advice?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. These tools are educational and do not replace professional medical guidance."
-              }
+  <!-- Schema.org JSON-LD (WebSite + WebPage + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.imceproteina.com.br/#org",
+        "name": "IMCEPROTEINA.COM.BR",
+        "url": "https://www.imceproteina.com.br/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.imceproteina.com.br/#website",
+        "url": "https://www.imceproteina.com.br/",
+        "name": "IMC e Proteína",
+        "publisher": { "@id": "https://www.imceproteina.com.br/#org" },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.imceproteina.com.br/#webpage",
+        "url": "https://www.imceproteina.com.br/",
+        "name": "Calculadoras de IMC, Proteína, TMB, TDEE, IMC Infantil e DPP",
+        "description": "Calculadoras gratuitas: IMC (adulto), proteína (g/dia), IMC infantil (OMS), TMB, TDEE, % gordura, peso ideal e data provável do parto (DPP). Estimativas educacionais.",
+        "isPartOf": { "@id": "https://www.imceproteina.com.br/#website" },
+        "publisher": { "@id": "https://www.imceproteina.com.br/#org" },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.imceproteina.com.br/#faq",
+        "inLanguage": "pt-BR",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "As calculadoras são 100% precisas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Elas são estimativas baseadas em fórmulas e referências amplamente usadas. A precisão varia de pessoa para pessoa e depende das medidas inseridas."
             }
-          ]
-        },
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a diferença entre TMB e TDEE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A TMB estima calorias em repouso. O TDEE estima calorias diárias multiplicando a TMB por um fator de atividade."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "IMC infantil é igual ao IMC adulto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Para crianças e adolescentes, o IMC deve ser interpretado por idade e sexo usando percentil/z-score (curvas OMS)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Data provável do parto (DPP) é definitiva?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. É uma estimativa baseada na DUM e no ciclo. Em muitos casos, a ultrassonografia no primeiro trimestre ajusta a data."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.imceproteina.com.br/#bmi-app",
-          "name": "BMI (IMC) Calculator",
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "url": "https://www.imceproteina.com.br/#bmi-calculator"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.imceproteina.com.br/#bmr-app",
-          "name": "BMR Calculator (Basal Metabolic Rate)",
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "url": "https://www.imceproteina.com.br/#bmr-calculator"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.imceproteina.com.br/#tdee-app",
-          "name": "TDEE Calculator (Maintenance Calories)",
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "url": "https://www.imceproteina.com.br/#tdee-calculator"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.imceproteina.com.br/#body-fat-app",
-          "name": "Body Fat Percentage Calculator (U.S. Navy Method)",
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "url": "https://www.imceproteina.com.br/#body-fat-calculator"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://www.imceproteina.com.br/#ideal-weight-app",
-          "name": "Ideal Weight Calculator (Devine, Robinson, Miller)",
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "url": "https://www.imceproteina.com.br/#ideal-weight-calculator"
-        }
-      ]
-    }
-    </script>
+  <!-- Tailwind (layout rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body class="bg-slate-50 text-slate-800 smooth-scroll">
-    <!-- Skip link (a11y) -->
-    <a href="#main"
-       class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-white focus:text-slate-800 focus:px-4 focus:py-2 focus:rounded-lg focus:shadow">
-       Skip to content
-    </a>
+  <!-- Pular para o conteúdo (acessibilidade) -->
+  <a href="#main"
+     class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-white focus:text-slate-800 focus:px-4 focus:py-2 focus:rounded-lg focus:shadow">
+     Pular para o conteúdo
+  </a>
 
-    <script src="https://quge5.com/88/tag.min.js" data-zone="197026" async data-cfasync="false"></script>
+  <!-- Script Externo (mantido conforme original) -->
+  <script src="https://quge5.com/88/tag.min.js" data-zone="197026" async data-cfasync="false"></script>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="#" class="flex-shrink-0 flex items-center" aria-label="IMC e Proteína Home">
-                        <i class="fa-solid fa-heart-pulse text-emerald-600 text-2xl mr-2"></i>
-                        <span class="font-bold text-xl tracking-tight text-slate-800">IMC E <span class="text-emerald-600">PROTEÍNA</span></span>
-                    </a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-6">
-                    <div class="flex items-center space-x-8">
-                        <a href="#calculators" class="text-slate-600 hover:text-emerald-600 font-medium transition">Calculadoras</a>
-                        <a href="#bmi-guide" class="text-slate-600 hover:text-emerald-600 font-medium transition">Guia IMC</a>
-                        <a href="#bmr-guide" class="text-slate-600 hover:text-emerald-600 font-medium transition">Guia TMB</a>
-                        <a href="#protein-guide" class="text-slate-600 hover:text-emerald-600 font-medium transition">Proteína</a>
-                        <a href="#faq" class="text-slate-600 hover:text-emerald-600 font-medium transition">FAQ</a>
-                    </div>
-
-                    <!-- Language Switcher Desktop -->
-                    <div class="flex items-center space-x-2 border-l pl-4 border-slate-200">
-                        <span class="font-bold text-emerald-600 cursor-default">PT</span>
-                        <span class="text-slate-300">|</span>
-                        <a href="index_en.html" class="text-slate-500 hover:text-emerald-600 font-medium transition" title="English">EN</a>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center md:hidden">
-                    <!-- Language Switcher Mobile -->
-                    <div class="flex items-center space-x-2 mr-4 border-r pr-4 border-slate-200">
-                        <span class="font-bold text-emerald-600 text-sm">PT</span>
-                        <a href="index_en.html" class="text-slate-500 text-sm">EN</a>
-                    </div>
-                    <button id="mobile-menu-btn"
-                            class="text-slate-600 hover:text-emerald-600 focus:outline-none"
-                            aria-controls="mobile-menu"
-                            aria-expanded="false"
-                            aria-label="Open menu">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
+  <!-- Navegação -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="flex-shrink-0 flex items-center" aria-label="Início - IMC e Proteína">
+            <i class="fa-solid fa-heart-pulse text-emerald-600 text-2xl mr-2"></i>
+            <span class="font-bold text-xl tracking-tight text-slate-800">
+              IMC E <span class="text-emerald-600">PROTEÍNA</span>
+            </span>
+          </a>
         </div>
 
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#calculators" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Calculadoras</a>
-                <a href="#bmi-guide" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Guia IMC</a>
-                <a href="#bmr-guide" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Guia TMB</a>
-                <a href="#protein-guide" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Proteína</a>
-                <a href="#faq" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">FAQ</a>
-                <hr class="my-2 border-slate-100">
-                <a href="sobre.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Sobre Nós</a>
-                <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Contato</a>
-            </div>
-        </div>
-    </nav>
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex items-center space-x-6">
+          <div class="flex items-center space-x-8">
+            <a href="#destaques" class="text-slate-600 hover:text-emerald-600 font-medium transition">Destaques</a>
+            <a href="#todas" class="text-slate-600 hover:text-emerald-600 font-medium transition">Todas as calculadoras</a>
+            <a href="#guias" class="text-slate-600 hover:text-emerald-600 font-medium transition">Guias</a>
+            <a href="#faq" class="text-slate-600 hover:text-emerald-600 font-medium transition">FAQ</a>
+          </div>
 
-    <!-- Hero Section -->
-    <header class="gradient-bg pt-32 pb-20 px-4 text-center text-white">
-        <div class="max-w-4xl mx-auto">
-            <!-- EN-first H1 aligned with title -->
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Health Calculators: BMI, BMR, TDEE, Body Fat % & Ideal Weight</h1>
-            <p class="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-                Ferramenta do <strong>imceproteina.com.br</strong> com calculadoras e guias práticos. Resultados são <strong>estimativas educacionais</strong> e não substituem orientação médica.
+          <!-- Idioma -->
+          <div class="flex items-center space-x-2 border-l pl-4 border-slate-200">
+            <span class="font-bold text-emerald-600 cursor-default">PT</span>
+            <span class="text-slate-300">|</span>
+            <a href="index_en.html" class="text-slate-500 hover:text-emerald-600 font-medium transition" title="English">EN</a>
+          </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="flex items-center md:hidden">
+          <div class="flex items-center space-x-2 mr-4 border-r pr-4 border-slate-200">
+            <span class="font-bold text-emerald-600 text-sm">PT</span>
+            <a href="index_en.html" class="text-slate-500 text-sm">EN</a>
+          </div>
+          <button id="mobile-menu-btn"
+                  class="text-slate-600 hover:text-emerald-600 focus:outline-none"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                  aria-label="Abrir menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#destaques" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Destaques</a>
+        <a href="#todas" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Todas as calculadoras</a>
+        <a href="#guias" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">Guias</a>
+        <a href="#faq" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-slate-50">FAQ</a>
+        <hr class="my-2 border-slate-100" />
+        <a href="sobre.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Sobre Nós</a>
+        <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-500 hover:text-emerald-600">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="gradient-bg pt-32 pb-16 px-4 text-center text-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm mb-6">
+        <i class="fa-solid fa-shield-heart"></i>
+        <span><strong>PT-BR</strong> • interface moderna • estimativas educacionais</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Calculadoras de saúde e nutrição em um só lugar
+      </h1>
+
+      <p class="text-lg md:text-xl opacity-95 mb-8 max-w-3xl mx-auto">
+        Use as calculadoras do <strong>imceproteina.com.br</strong> para ter uma ideia rápida de IMC, proteína/dia,
+        TMB, TDEE, % de gordura, peso ideal, <strong>IMC infantil (OMS)</strong> e <strong>data provável do parto (DPP)</strong>.
+        <span class="block mt-2 text-white/90 text-sm">Não substitui acompanhamento médico ou nutricional.</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#destaques" class="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transform hover:-translate-y-1 transition duration-300">
+          <i class="fa-solid fa-star"></i> Ver destaques
+        </a>
+        <a href="#todas" class="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white font-bold py-3 px-8 rounded-full hover:bg-white/15 transition duration-300">
+          <i class="fa-solid fa-calculator"></i> Ver todas
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="max-w-7xl mx-auto px-4 py-12 space-y-20">
+
+    <!-- Destaques -->
+    <section id="destaques" class="scroll-mt-24">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
+          <i class="fa-solid fa-star text-emerald-600 mr-2"></i>
+          Calculadoras em destaque
+        </h2>
+        <p class="text-slate-600 mt-2 max-w-2xl mx-auto">
+          As mais usadas do site, com explicações claras e resultados fáceis de entender.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- IMC Adulto -->
+        <section id="bmi-calculator" class="calc-card featured scroll-mt-24" data-feature="imc">
+          <header class="calc-header">
+            <div class="calc-badge">
+              <i class="fa-solid fa-bolt"></i> Destaque
+            </div>
+            <h3 class="calc-title">Calculadora de IMC (Adulto)</h3>
+            <p class="calc-subtitle">
+              O IMC (Índice de Massa Corporal) é uma triagem do peso em relação à altura. Ele <strong>não mede gordura</strong> diretamente, mas ajuda a identificar risco.
             </p>
-            <a href="#calculators" class="inline-block bg-white text-emerald-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transform hover:-translate-y-1 transition duration-300">
-                Ir para as Calculadoras
-            </a>
-        </div>
-    </header>
+          </header>
 
-    <!-- Main Content Container -->
-    <main id="main" class="max-w-7xl mx-auto px-4 py-12 space-y-20">
+          <div class="calc-body">
+            <form id="bmi-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                  <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required
+                         class="calc-input" placeholder="Ex.: 175" />
+                </label>
 
-        <!-- CALCULATORS (5 tools) -->
-        <section id="calculators" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
-            <!-- legacy anchor for older links -->
-            <div id="calculadora" class="h-0 scroll-mt-24"></div>
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</span>
+                  <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required
+                         class="calc-input" placeholder="Ex.: 75,5" />
+                </label>
+              </div>
 
-            <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200">
-                <h2 class="text-2xl font-bold text-center text-slate-800">
-                    <i class="fa-solid fa-calculator mr-2 text-emerald-600"></i>
-                    Health Calculators (EN-first)
-                </h2>
-                <p class="text-center text-slate-600 mt-2">
-                    Use uma calculadora por vez. Cada seção tem URL por âncora (ex.: <span class="font-mono text-xs">#bmi-calculator</span>).
-                </p>
+              <button type="submit" class="calc-btn">
+                Calcular IMC
+              </button>
 
-                <!-- Quick links (anchors) -->
-                <nav class="mt-6" aria-label="Calculator quick links">
-                    <ul class="flex flex-wrap justify-center gap-2">
-                        <li><a class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition" href="#bmi-calculator">BMI</a></li>
-                        <li><a class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition" href="#bmr-calculator">BMR</a></li>
-                        <li><a class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition" href="#tdee-calculator">TDEE</a></li>
-                        <li><a class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition" href="#body-fat-calculator">Body Fat %</a></li>
-                        <li><a class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition" href="#ideal-weight-calculator">Ideal Weight</a></li>
-                    </ul>
-                </nav>
+              <p id="bmi-error" class="calc-error hidden">Confira os valores informados.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Diferença importante</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li><strong>IMC (adulto)</strong> usa apenas altura e peso.</li>
+                  <li><strong>IMC infantil</strong> usa percentil/z-score por <strong>idade e sexo</strong> (curvas OMS).</li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="bmi-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
             </div>
-
-            <div class="p-6 md:p-10 space-y-10">
-
-                <!-- BMI -->
-                <section id="bmi-calculator" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden">
-                    <div class="p-6 bg-white border-b border-slate-100">
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-800">BMI (IMC) Calculator</h2>
-                        <p class="text-slate-600 mt-2">
-                            Body Mass Index (BMI) estimates weight-to-height ratio. It does not directly measure body fat, but it’s useful for screening.
-                        </p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-slate-700">Inputs</h3>
-
-                            <form id="bmi-form" class="space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</span>
-                                        <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 175">
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Weight (kg)</span>
-                                        <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 75.5">
-                                    </label>
-                                </div>
-
-                                <button type="submit"
-                                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow transform active:scale-95 transition duration-200">
-                                    Calculate BMI
-                                </button>
-
-                                <p id="bmi-error" class="text-red-500 text-center hidden font-medium">Please fill in valid values.</p>
-                            </form>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-6 border border-slate-200">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Result</h3>
-                            <div id="bmi-result" role="status" aria-live="polite" class="text-slate-700">
-                                <p class="text-slate-500">Enter your data and calculate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- BMR -->
-                <section id="bmr-calculator" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden">
-                    <div class="p-6 bg-white border-b border-slate-100">
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-800">BMR Calculator (Basal Metabolic Rate)</h2>
-                        <p class="text-slate-600 mt-2">
-                            Basal Metabolic Rate estimates calories your body needs at rest. This uses the Mifflin–St Jeor equation.
-                        </p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-slate-700">Inputs</h3>
-
-                            <form id="bmr-form" class="space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Sex</span>
-                                        <select name="sex" required
-                                                class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
-                                            <option value="female">Female</option>
-                                            <option value="male">Male</option>
-                                        </select>
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Age (years)</span>
-                                        <input name="age" type="number" min="10" max="120" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 30">
-                                    </label>
-                                </div>
-
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</span>
-                                        <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 175">
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Weight (kg)</span>
-                                        <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 75.5">
-                                    </label>
-                                </div>
-
-                                <button type="submit"
-                                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow transform active:scale-95 transition duration-200">
-                                    Calculate BMR
-                                </button>
-
-                                <p id="bmr-error" class="text-red-500 text-center hidden font-medium">Please fill in valid values.</p>
-                            </form>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-6 border border-slate-200">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Result</h3>
-                            <div id="bmr-result" role="status" aria-live="polite" class="text-slate-700">
-                                <p class="text-slate-500">Enter your data and calculate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- TDEE -->
-                <section id="tdee-calculator" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden">
-                    <div class="p-6 bg-white border-b border-slate-100">
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-800">TDEE Calculator (Maintenance Calories)</h2>
-                        <p class="text-slate-600 mt-2">
-                            Total Daily Energy Expenditure estimates daily calories using BMR × activity factor.
-                        </p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-slate-700">Inputs</h3>
-
-                            <form id="tdee-form" class="space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Sex</span>
-                                        <select name="sex" required
-                                                class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
-                                            <option value="female">Female</option>
-                                            <option value="male">Male</option>
-                                        </select>
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Age (years)</span>
-                                        <input name="age" type="number" min="10" max="120" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 30">
-                                    </label>
-                                </div>
-
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</span>
-                                        <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 175">
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Weight (kg)</span>
-                                        <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 75.5">
-                                    </label>
-                                </div>
-
-                                <label class="block">
-                                    <span class="block text-sm font-medium text-slate-700 mb-2">Activity level</span>
-                                    <select name="activity" required
-                                            class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
-                                        <option value="1.2">Sedentary (little or no exercise)</option>
-                                        <option value="1.375">Light (1–3 days/week)</option>
-                                        <option value="1.55">Moderate (3–5 days/week)</option>
-                                        <option value="1.725">Very active (6–7 days/week)</option>
-                                        <option value="1.9">Extra active (physical job + training)</option>
-                                    </select>
-                                </label>
-
-                                <button type="submit"
-                                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow transform active:scale-95 transition duration-200">
-                                    Calculate TDEE
-                                </button>
-
-                                <p id="tdee-error" class="text-red-500 text-center hidden font-medium">Please fill in valid values.</p>
-                            </form>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-6 border border-slate-200">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Result</h3>
-                            <div id="tdee-result" role="status" aria-live="polite" class="text-slate-700">
-                                <p class="text-slate-500">Enter your data and calculate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Body Fat -->
-                <section id="body-fat-calculator" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden">
-                    <div class="p-6 bg-white border-b border-slate-100">
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-800">Body Fat Percentage (U.S. Navy Method)</h2>
-                        <p class="text-slate-600 mt-2">
-                            Estimates body fat percentage using circumference measurements. Use a flexible tape and measure consistently.
-                        </p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-slate-700">Inputs</h3>
-
-                            <form id="bf-form" class="space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Sex</span>
-                                        <select name="sex" required
-                                                class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
-                                            <option value="female">Female</option>
-                                            <option value="male">Male</option>
-                                        </select>
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</span>
-                                        <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 175">
-                                    </label>
-                                </div>
-
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Neck (cm)</span>
-                                        <input name="neckCm" type="number" inputmode="decimal" min="20" max="80" step="0.1" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 38">
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Waist (cm)</span>
-                                        <input name="waistCm" type="number" inputmode="decimal" min="40" max="200" step="0.1" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 85">
-                                    </label>
-
-                                    <label class="block" data-female-only>
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Hip (cm) — female</span>
-                                        <input name="hipCm" type="number" inputmode="decimal" min="40" max="200" step="0.1"
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 98">
-                                    </label>
-                                </div>
-
-                                <button type="submit"
-                                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow transform active:scale-95 transition duration-200">
-                                    Calculate Body Fat %
-                                </button>
-
-                                <p id="bf-error" class="text-red-500 text-center hidden font-medium">Please check your measurements and try again.</p>
-                                <p class="text-xs text-slate-500 italic">
-                                    Tip: keep tape level and consistent tension. Measure waist at navel (common approach) and neck just below the larynx.
-                                </p>
-                            </form>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-6 border border-slate-200">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Result</h3>
-                            <div id="bf-result" role="status" aria-live="polite" class="text-slate-700">
-                                <p class="text-slate-500">Enter your data and calculate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Ideal Weight -->
-                <section id="ideal-weight-calculator" class="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden">
-                    <div class="p-6 bg-white border-b border-slate-100">
-                        <h2 class="text-xl md:text-2xl font-bold text-slate-800">Ideal Weight Calculator (Devine, Robinson, Miller)</h2>
-                        <p class="text-slate-600 mt-2">
-                            Reference “ideal weight” estimates based on height and sex. Commonly used in clinical contexts (e.g., dosing), not as a universal goal weight.
-                        </p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <h3 class="text-lg font-semibold text-slate-700">Inputs</h3>
-
-                            <form id="iw-form" class="space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Sex</span>
-                                        <select name="sex" required
-                                                class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition">
-                                            <option value="female">Female</option>
-                                            <option value="male">Male</option>
-                                        </select>
-                                    </label>
-
-                                    <label class="block">
-                                        <span class="block text-sm font-medium text-slate-700 mb-2">Height (cm)</span>
-                                        <input name="heightCm" type="number" inputmode="decimal" min="120" max="250" required
-                                               class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                                               placeholder="Ex: 175">
-                                    </label>
-                                </div>
-
-                                <button type="submit"
-                                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow transform active:scale-95 transition duration-200">
-                                    Calculate Ideal Weight
-                                </button>
-
-                                <p id="iw-error" class="text-red-500 text-center hidden font-medium">Please fill in valid values.</p>
-                            </form>
-
-                            <div class="bg-white border border-slate-200 rounded-xl p-4">
-                                <h3 class="text-md font-semibold text-slate-800 mb-2">How to interpret</h3>
-                                <ul class="text-sm text-slate-600 list-disc pl-5 space-y-1">
-                                    <li><strong>Devine</strong>: classic reference formula.</li>
-                                    <li><strong>Robinson</strong>: alternative reference estimate.</li>
-                                    <li><strong>Miller</strong>: another commonly cited estimate.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-xl p-6 border border-slate-200">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Result</h3>
-                            <div id="iw-result" role="status" aria-live="polite" class="text-slate-700">
-                                <p class="text-slate-500">Enter your data and calculate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="text-xs text-slate-500 italic text-center">
-                    Disclaimer: results are educational estimates and may not apply to specific medical conditions. For personalized advice, consult a qualified professional.
-                </div>
-            </div>
+          </div>
         </section>
 
-        <!-- SEO ARTICLE: BMI (kept PT copy, EN-first headings/IDs) -->
-        <article id="bmi-guide" class="prose lg:prose-xl max-w-none text-slate-600">
-            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-emerald-500 pl-4">Understanding Body Mass Index (BMI / IMC)</h2>
-            <p>
-                O <strong>IMC</strong> é uma das métricas mais utilizadas mundialmente pela Organização Mundial da Saúde (OMS) para triagem inicial do estado nutricional. No <em>IMCEPROTEINA.COM.BR</em>, utilizamos a fórmula padrão: peso dividido pela altura ao quadrado (kg/m²).
-            </p>
-            <div class="grid md:grid-cols-2 gap-8 my-8">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Why calculate BMI?</h3>
-                    <p>O cálculo permite identificar riscos associados ao excesso ou falta de peso. Embora não meça diretamente a gordura corporal, há uma forte correlação entre um IMC elevado e problemas metabólicos.</p>
-                    <ul class="list-disc pl-5 space-y-2 mt-4">
-                        <li><strong>Abaixo de 18,5:</strong> Possível desnutrição ou problemas de saúde.</li>
-                        <li><strong>18,5 a 24,9:</strong> Peso considerado saudável (menor risco de doenças cardiovasculares).</li>
-                        <li><strong>25,0 a 29,9:</strong> Sobrepeso. Atenção redobrada com alimentação.</li>
-                        <li><strong>30,0 ou mais:</strong> Obesidade. Recomenda-se acompanhamento médico.</li>
-                    </ul>
-                </div>
-                <div class="bg-slate-100 p-6 rounded-xl">
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">BMI limitations</h3>
-                    <p>É importante notar que o IMC não distingue massa muscular de gordura. Atletas muito musculosos podem ter um IMC alto (categoria \"sobrepeso\") mesmo com baixo percentual de gordura. Por isso, combinar com outras métricas (ex.: % de gordura) ajuda na análise.</p>
-                </div>
+        <!-- Proteína -->
+        <section id="protein-calculator" class="calc-card featured scroll-mt-24" data-feature="proteina">
+          <header class="calc-header">
+            <div class="calc-badge">
+              <i class="fa-solid fa-bolt"></i> Destaque
             </div>
-        </article>
-
-        <!-- SEO ARTICLE: BMR/TMB -->
-        <article id="bmr-guide" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
-            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-blue-500 pl-4">Basal Metabolic Rate (BMR / TMB): What it is</h2>
-            <p>
-                A <strong>Taxa Metabólica Basal</strong> representa a quantidade mínima de energia (calorias) que seu corpo precisa para sobreviver em repouso absoluto — ou seja, para manter o coração batendo, os pulmões respirando e o cérebro funcionando.
+            <h3 class="calc-title">Calculadora de Proteína (g/dia)</h3>
+            <p class="calc-subtitle">
+              Estima uma faixa diária de proteína com base no seu peso e objetivo. É uma forma simples de planejar dieta e refeições.
             </p>
-            <p class="mt-4">
-                Em nossa calculadora, utilizamos a equação de <em>Mifflin-St Jeor</em>, considerada pela comunidade científica atual como a mais precisa para a maioria da população. Saber sua TMB é o primeiro passo para montar uma dieta, seja para emagrecimento ou hipertrofia.
-            </p>
+          </header>
 
-            <div class="bg-blue-50 p-6 rounded-xl my-8 border border-blue-100">
-                <h3 class="text-xl font-bold text-blue-800 mb-3">BMR vs TDEE (Total Daily Energy Expenditure)</h3>
-                <p>
-                    Não confunda TMB com gasto total. A TMB é apenas o repouso. Para estimar o total diário, multiplicamos a TMB pelo seu <strong>fator de atividade</strong> (TDEE).
-                </p>
+          <div class="calc-body">
+            <form id="protein-form" class="space-y-4">
+              <label class="block">
+                <span class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</span>
+                <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required
+                       class="calc-input" placeholder="Ex.: 75,5" />
+              </label>
+
+              <label class="block">
+                <span class="block text-sm font-medium text-slate-700 mb-2">Objetivo</span>
+                <select name="goal" required class="calc-input bg-white">
+                  <option value="sed">Sedentário / saúde geral</option>
+                  <option value="cut">Emagrecimento (preservar massa magra)</option>
+                  <option value="gain">Hipertrofia (ganho de massa)</option>
+                  <option value="end">Resistência (corrida/ciclismo)</option>
+                </select>
+              </label>
+
+              <button type="submit" class="calc-btn">
+                Calcular proteína
+              </button>
+
+              <p id="protein-error" class="calc-error hidden">Confira os valores informados.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Como interpretar</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li>Mostramos uma <strong>faixa</strong> (mín–máx), porque a necessidade varia.</li>
+                  <li>Você pode dividir o total em 3–5 refeições para facilitar.</li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="protein-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
             </div>
-        </article>
-
-        <!-- SEO ARTICLE: PROTEIN (kept as guide content) -->
-        <article id="protein-guide" class="prose lg:prose-xl max-w-none text-slate-600 border-t border-slate-200 pt-16">
-            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-8 border-orange-500 pl-4">Protein Intake Guide (Guia de Proteína)</h2>
-            <p>
-                Seja para ganhar massa muscular ou perder gordura, a <strong>ingestão de proteína</strong> é a chave. As proteínas são os blocos de construção dos músculos, pele, enzimas e hormônios.
-            </p>
-
-            <div class="grid md:grid-cols-3 gap-6 my-8">
-                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-emerald-500">
-                    <h3 class="font-bold text-lg mb-2">Para Hipertrofia</h3>
-                    <p class="text-sm">Recomenda-se entre <strong>1.6g a 2.2g</strong> de proteína por kg de peso.</p>
-                </div>
-                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-yellow-500">
-                    <h3 class="font-bold text-lg mb-2">Para Emagrecimento</h3>
-                    <p class="text-sm">Manter a ingestão alta pode ajudar a preservar massa magra durante déficit calórico.</p>
-                </div>
-                <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-blue-500">
-                    <h3 class="font-bold text-lg mb-2">Para Sedentários</h3>
-                    <p class="text-sm">A recomendação geral é pelo menos <strong>0.8g a 1.0g</strong> por kg.</p>
-                </div>
-            </div>
-
-            <p>
-                Fontes excelentes incluem: peito de frango, ovos, peixes, laticínios, whey protein, soja, lentilha e feijões.
-            </p>
-        </article>
-
-        <!-- FAQ (EN-first + schema aligned) -->
-        <section id="faq" class="bg-slate-100 rounded-2xl p-8 md:p-12 scroll-mt-24">
-            <h2 class="text-3xl font-bold text-slate-800 text-center mb-10">FAQ</h2>
-
-            <div class="max-w-4xl mx-auto space-y-4">
-                <details class="bg-white rounded-xl border border-slate-200 p-5">
-                    <summary class="font-bold text-slate-800 cursor-pointer">Are these calculators accurate?</summary>
-                    <p class="text-slate-600 mt-2">They are estimates based on widely used formulas. Accuracy varies by individual and measurement quality.</p>
-                </details>
-
-                <details class="bg-white rounded-xl border border-slate-200 p-5">
-                    <summary class="font-bold text-slate-800 cursor-pointer">What is the difference between BMR and TDEE?</summary>
-                    <p class="text-slate-600 mt-2">BMR estimates calories at rest. TDEE estimates daily calories by multiplying BMR by an activity factor.</p>
-                </details>
-
-                <details class="bg-white rounded-xl border border-slate-200 p-5">
-                    <summary class="font-bold text-slate-800 cursor-pointer">How do I measure neck/waist/hip for the U.S. Navy method?</summary>
-                    <p class="text-slate-600 mt-2">Use a flexible tape, keep it level, and measure consistently. Waist is commonly measured at the navel; hip is used for females.</p>
-                </details>
-
-                <details class="bg-white rounded-xl border border-slate-200 p-5">
-                    <summary class="font-bold text-slate-800 cursor-pointer">Is this medical advice?</summary>
-                    <p class="text-slate-600 mt-2">No. These tools are educational and do not replace professional medical guidance.</p>
-                </details>
-            </div>
+          </div>
         </section>
 
-    </main>
+        <!-- IMC Infantil -->
+        <section id="bmi-child-calculator" class="calc-card featured scroll-mt-24" data-feature="imc-infantil">
+          <header class="calc-header">
+            <div class="calc-badge">
+              <i class="fa-solid fa-bolt"></i> Destaque
+            </div>
+            <h3 class="calc-title">IMC Infantil (OMS): percentil e z-score</h3>
+            <p class="calc-subtitle">
+              Para crianças e adolescentes (2 a 19 anos), o IMC precisa ser lido por <strong>idade e sexo</strong>.
+              Aqui usamos parâmetros LMS oficiais da OMS para estimar <strong>z-score</strong> e <strong>percentil</strong>.
+            </p>
+          </header>
 
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <span class="font-bold text-xl text-white">IMC E <span class="text-emerald-500">PROTEÍNA</span></span>
-                <p class="mt-4 text-sm opacity-80">Sua fonte confiável para cálculos de saúde, nutrição e bem-estar. Otimizado para seus resultados.</p>
-                <p class="mt-2 text-sm text-emerald-500 font-semibold">www.imceproteina.com.br</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Links Rápidos</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#calculators" class="hover:text-emerald-400">Calculadoras</a></li>
-                    <li><a href="#bmi-guide" class="hover:text-emerald-400">Guia IMC</a></li>
-                    <li><a href="#bmr-guide" class="hover:text-emerald-400">Guia TMB</a></li>
-                    <li><a href="#protein-guide" class="hover:text-emerald-400">Proteína</a></li>
-                    <li><a href="#faq" class="hover:text-emerald-400">FAQ</a></li>
-                    <li class="pt-2"><a href="sobre.html" class="hover:text-emerald-400">Sobre Nós</a></li>
-                    <li><a href="contato.html" class="hover:text-emerald-400">Fale Conosco</a></li>
+          <div class="calc-body">
+            <form id="bmi-child-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Sexo</span>
+                  <select name="sex" required class="calc-input bg-white">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                  </select>
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Data de nascimento</span>
+                  <input name="dob" type="date" required class="calc-input" />
+                </label>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Data da medida</span>
+                  <input name="measureDate" id="child-measure-date" type="date" required class="calc-input" />
+                </label>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <label class="block">
+                    <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                    <input name="heightCm" type="number" inputmode="decimal" min="50" max="220" required class="calc-input" placeholder="Ex.: 140" />
+                  </label>
+                  <label class="block">
+                    <span class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</span>
+                    <input name="weightKg" type="number" inputmode="decimal" min="10" max="200" step="0.1" required class="calc-input" placeholder="Ex.: 35,2" />
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="calc-btn">
+                Calcular IMC infantil
+              </button>
+
+              <p id="bmi-child-error" class="calc-error hidden">Confira os dados. Idade suportada: 2 a 19 anos.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Diferença (adulto x infantil)</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li>No adulto, IMC é interpretado por “faixas fixas” (ex.: 18,5–24,9).</li>
+                  <li>No infantil, IMC muda naturalmente com a idade — por isso usamos <strong>z-score/percentil</strong>.</li>
                 </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="bmi-child-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
             </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Legal</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="politica.html" class="hover:text-emerald-400">Política de Privacidade</a></li>
-                    <li><a href="termos.html" class="hover:text-emerald-400">Termos de Uso</a></li>
+          </div>
+        </section>
+
+        <!-- DPP -->
+        <section id="due-date-calculator" class="calc-card featured scroll-mt-24" data-feature="dpp">
+          <header class="calc-header">
+            <div class="calc-badge">
+              <i class="fa-solid fa-bolt"></i> Destaque
+            </div>
+            <h3 class="calc-title">Calculadora de Data Provável do Parto (DPP)</h3>
+            <p class="calc-subtitle">
+              Estima a DPP a partir da <strong>DUM</strong> (data da última menstruação) e do seu ciclo. Também mostra idade gestacional aproximada.
+            </p>
+          </header>
+
+          <div class="calc-body">
+            <form id="due-date-form" class="space-y-4">
+              <label class="block">
+                <span class="block text-sm font-medium text-slate-700 mb-2">DUM (Data da última menstruação)</span>
+                <input name="lmp" type="date" required class="calc-input" />
+              </label>
+
+              <label class="block">
+                <span class="block text-sm font-medium text-slate-700 mb-2">Duração do ciclo (dias)</span>
+                <input name="cycle" type="number" min="20" max="45" value="28" required class="calc-input" />
+                <span class="text-xs text-slate-500">Se não souber, deixe 28 (padrão).</span>
+              </label>
+
+              <button type="submit" class="calc-btn">
+                Calcular DPP
+              </button>
+
+              <p id="due-date-error" class="calc-error hidden">Confira as datas informadas.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Importante</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li>A DPP é uma <strong>estimativa</strong>. Muitas gestações não chegam exatamente nessa data.</li>
+                  <li>Ultrassom do 1º trimestre pode ajustar a data (conforme orientação médica).</li>
                 </ul>
-                <p class="mt-6 text-xs opacity-50">&copy; 2024 IMCEPROTEINA. Todos os direitos reservados.</p>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="due-date-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
             </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Todas as calculadoras -->
+    <section id="todas" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 scroll-mt-24">
+      <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200">
+        <h2 class="text-2xl font-bold text-center text-slate-800">
+          <i class="fa-solid fa-calculator mr-2 text-emerald-600"></i>
+          Todas as calculadoras
+        </h2>
+        <p class="text-center text-slate-600 mt-2">
+          Dica: para “calorias do dia”, use <strong>TMB → TDEE</strong>. Para composição corporal, combine <strong>IMC + % de gordura</strong>.
+        </p>
+
+        <nav class="mt-6" aria-label="Links rápidos das calculadoras">
+          <ul class="flex flex-wrap justify-center gap-2">
+            <li><a class="chip" href="#bmi-calculator">IMC Adulto</a></li>
+            <li><a class="chip" href="#protein-calculator">Proteína</a></li>
+            <li><a class="chip" href="#bmi-child-calculator">IMC Infantil</a></li>
+            <li><a class="chip" href="#due-date-calculator">DPP</a></li>
+            <li><a class="chip" href="#bmr-calculator">TMB</a></li>
+            <li><a class="chip" href="#tdee-calculator">TDEE</a></li>
+            <li><a class="chip" href="#body-fat-calculator">% Gordura</a></li>
+            <li><a class="chip" href="#ideal-weight-calculator">Peso ideal</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="p-6 md:p-10 space-y-10">
+        <!-- TMB -->
+        <section id="bmr-calculator" class="calc-card scroll-mt-24">
+          <header class="calc-header">
+            <h3 class="calc-title">Calculadora de TMB (Taxa Metabólica Basal)</h3>
+            <p class="calc-subtitle">
+              Estima calorias em repouso usando a equação de <strong>Mifflin-St Jeor</strong> (amplamente utilizada).
+            </p>
+          </header>
+
+          <div class="calc-body">
+            <form id="bmr-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Sexo</span>
+                  <select name="sex" required class="calc-input bg-white">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                  </select>
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Idade (anos)</span>
+                  <input name="age" type="number" min="10" max="120" required class="calc-input" placeholder="Ex.: 30" />
+                </label>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                  <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required class="calc-input" placeholder="Ex.: 175" />
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</span>
+                  <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required class="calc-input" placeholder="Ex.: 75,5" />
+                </label>
+              </div>
+
+              <button type="submit" class="calc-btn">
+                Calcular TMB
+              </button>
+
+              <p id="bmr-error" class="calc-error hidden">Confira os valores informados.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Diferença</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li><strong>TMB</strong> = gasto mínimo em repouso.</li>
+                  <li><strong>TDEE</strong> = TMB × nível de atividade (gasto total diário).</li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="bmr-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TDEE -->
+        <section id="tdee-calculator" class="calc-card scroll-mt-24">
+          <header class="calc-header">
+            <h3 class="calc-title">Calculadora de TDEE (Calorias de Manutenção)</h3>
+            <p class="calc-subtitle">
+              Estima seu gasto total diário (TDEE) multiplicando a TMB pelo fator de atividade.
+            </p>
+          </header>
+
+          <div class="calc-body">
+            <form id="tdee-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Sexo</span>
+                  <select name="sex" required class="calc-input bg-white">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                  </select>
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Idade (anos)</span>
+                  <input name="age" type="number" min="10" max="120" required class="calc-input" placeholder="Ex.: 30" />
+                </label>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                  <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required class="calc-input" placeholder="Ex.: 175" />
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Peso (kg)</span>
+                  <input name="weightKg" type="number" inputmode="decimal" min="10" max="400" step="0.1" required class="calc-input" placeholder="Ex.: 75,5" />
+                </label>
+              </div>
+
+              <label class="block">
+                <span class="block text-sm font-medium text-slate-700 mb-2">Nível de atividade</span>
+                <select name="activity" required class="calc-input bg-white">
+                  <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+                  <option value="1.375">Leve (1–3 dias/semana)</option>
+                  <option value="1.55">Moderado (3–5 dias/semana)</option>
+                  <option value="1.725">Muito ativo (6–7 dias/semana)</option>
+                  <option value="1.9">Extra ativo (trabalho físico + treino)</option>
+                </select>
+              </label>
+
+              <button type="submit" class="calc-btn">
+                Calcular TDEE
+              </button>
+
+              <p id="tdee-error" class="calc-error hidden">Confira os valores informados.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Sugestões rápidas</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li><strong>Manutenção</strong>: perto do TDEE.</li>
+                  <li><strong>Emagrecimento</strong>: geralmente 10–20% abaixo do TDEE (com acompanhamento).</li>
+                  <li><strong>Ganho de massa</strong>: geralmente 5–15% acima do TDEE.</li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="tdee-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- % Gordura -->
+        <section id="body-fat-calculator" class="calc-card scroll-mt-24">
+          <header class="calc-header">
+            <h3 class="calc-title">% de Gordura Corporal (Método Marinha dos EUA)</h3>
+            <p class="calc-subtitle">
+              Estima % de gordura por circunferências (pescoço, cintura e quadril). Use fita métrica e repita a medida 2–3 vezes.
+            </p>
+          </header>
+
+          <div class="calc-body">
+            <form id="bf-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Sexo</span>
+                  <select name="sex" required class="calc-input bg-white">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                  </select>
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                  <input name="heightCm" type="number" inputmode="decimal" min="50" max="250" required class="calc-input" placeholder="Ex.: 175" />
+                </label>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Pescoço (cm)</span>
+                  <input name="neckCm" type="number" inputmode="decimal" min="20" max="80" step="0.1" required class="calc-input" placeholder="Ex.: 38" />
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Cintura (cm)</span>
+                  <input name="waistCm" type="number" inputmode="decimal" min="40" max="200" step="0.1" required class="calc-input" placeholder="Ex.: 85" />
+                </label>
+
+                <label class="block" data-female-only>
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Quadril (cm) — feminino</span>
+                  <input name="hipCm" type="number" inputmode="decimal" min="40" max="200" step="0.1" class="calc-input" placeholder="Ex.: 98" />
+                </label>
+              </div>
+
+              <button type="submit" class="calc-btn">
+                Calcular % de gordura
+              </button>
+
+              <p id="bf-error" class="calc-error hidden">Confira as medidas e tente novamente.</p>
+
+              <p class="text-xs text-slate-500 italic">
+                Dica: mantenha a fita nivelada e sem apertar demais. Cintura normalmente no nível do umbigo.
+              </p>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="bf-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Peso ideal -->
+        <section id="ideal-weight-calculator" class="calc-card scroll-mt-24">
+          <header class="calc-header">
+            <h3 class="calc-title">Peso “Ideal” (Devine, Robinson, Miller)</h3>
+            <p class="calc-subtitle">
+              Fórmulas de referência baseadas em altura e sexo (muito usadas em contexto clínico). Não definem um “objetivo perfeito” para todo mundo.
+            </p>
+          </header>
+
+          <div class="calc-body">
+            <form id="iw-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Sexo</span>
+                  <select name="sex" required class="calc-input bg-white">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                  </select>
+                </label>
+
+                <label class="block">
+                  <span class="block text-sm font-medium text-slate-700 mb-2">Altura (cm)</span>
+                  <input name="heightCm" type="number" inputmode="decimal" min="120" max="250" required class="calc-input" placeholder="Ex.: 175" />
+                </label>
+              </div>
+
+              <button type="submit" class="calc-btn">
+                Calcular peso de referência
+              </button>
+
+              <p id="iw-error" class="calc-error hidden">Confira os valores informados.</p>
+
+              <div class="calc-note">
+                <p class="font-semibold text-slate-800 mb-1">Diferença entre fórmulas</p>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                  <li><strong>Devine</strong>: fórmula clássica e muito citada.</li>
+                  <li><strong>Robinson</strong>: alternativa com ajustes diferentes.</li>
+                  <li><strong>Miller</strong>: outra estimativa de referência.</li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc-result">
+              <h4 class="calc-result-title">Resultado</h4>
+              <div id="iw-result" role="status" aria-live="polite" class="text-slate-700">
+                <p class="text-slate-500">Preencha os dados e clique em “Calcular”.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="text-xs text-slate-500 italic text-center">
+          Aviso: resultados são estimativas educacionais e podem não se aplicar a condições específicas. Para orientação personalizada, procure um(a) profissional qualificado(a).
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Scripts Logic -->
-    <script>
-        // Mobile menu
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+    <!-- Guias -->
+    <section id="guias" class="scroll-mt-24 space-y-14">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Guias rápidos (bem explicados)</h2>
+        <p class="text-slate-600 mt-2 max-w-3xl mx-auto">
+          Entenda a diferença entre as calculadoras e quando usar cada uma.
+        </p>
+      </div>
 
-        if (btn && menu) {
-            btn.addEventListener('click', () => {
-                const isHidden = menu.classList.toggle('hidden');
-                btn.setAttribute('aria-expanded', String(!isHidden));
-            });
+      <article class="prose lg:prose-xl max-w-none text-slate-700">
+        <h3 class="text-3xl font-bold text-slate-900 border-l-8 border-emerald-500 pl-4">IMC (Adulto): o que é e limitações</h3>
+        <p>
+          O <strong>IMC</strong> é calculado como <strong>peso ÷ altura²</strong> (kg/m²). Ele serve como triagem rápida de risco associado ao excesso ou falta de peso.
+          Porém, não distingue <strong>músculo</strong> de <strong>gordura</strong>. Por isso, combinar com <strong>% de gordura</strong> e medidas corporais costuma melhorar a leitura.
+        </p>
+      </article>
 
-            const links = menu.querySelectorAll('.mobile-link');
-            links.forEach(link => {
-                link.addEventListener('click', () => {
-                    menu.classList.add('hidden');
-                    btn.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
+      <article class="prose lg:prose-xl max-w-none text-slate-700">
+        <h3 class="text-3xl font-bold text-slate-900 border-l-8 border-orange-500 pl-4">Proteína: por que é tão importante?</h3>
+        <p>
+          A <strong>proteína</strong> ajuda na manutenção e construção de massa magra, além de contribuir com saciedade.
+          A quantidade ideal depende do objetivo (saúde, emagrecimento, hipertrofia, resistência) e do contexto (treino, calorias, rotina).
+        </p>
+      </article>
 
-        // Helpers
-        const round = (n, d = 2) => Number.parseFloat(n).toFixed(d);
-        const cmToM = (cm) => cm / 100;
-        const cmToIn = (cm) => cm / 2.54;
-        const log10 = (x) => Math.log(x) / Math.LN10;
+      <article class="prose lg:prose-xl max-w-none text-slate-700">
+        <h3 class="text-3xl font-bold text-slate-900 border-l-8 border-blue-500 pl-4">TMB x TDEE: onde as calorias entram</h3>
+        <p>
+          A <strong>TMB</strong> é o gasto mínimo do corpo em repouso. Já o <strong>TDEE</strong> representa o gasto total diário, considerando atividade (trabalho, treino, passos).
+          É comum usar o TDEE como base para planejar <strong>manutenção</strong>, <strong>déficit</strong> (emagrecer) ou <strong>superávit</strong> (ganhar massa).
+        </p>
+      </article>
 
-        const showError = (id, show) => {
-            const el = document.getElementById(id);
-            if (!el) return;
-            el.classList.toggle('hidden', !show);
-        };
+      <article class="prose lg:prose-xl max-w-none text-slate-700">
+        <h3 class="text-3xl font-bold text-slate-900 border-l-8 border-emerald-500 pl-4">IMC Infantil (OMS): percentil e z-score</h3>
+        <p>
+          Em crianças e adolescentes, o IMC muda com a idade. Por isso, a OMS recomenda interpretar o IMC por <strong>idade em meses</strong> e <strong>sexo</strong>,
+          usando curvas (z-score e percentis). Aqui, a calculadora estima o z-score via método LMS.
+        </p>
+        <p class="text-sm text-slate-600">
+          Observação: este resultado é apenas uma referência estatística e não substitui avaliação pediátrica/nutricional.
+        </p>
+      </article>
 
-        const setResult = (id, html) => {
-            const el = document.getElementById(id);
-            if (!el) return;
-            el.innerHTML = html;
-        };
+      <article class="prose lg:prose-xl max-w-none text-slate-700">
+        <h3 class="text-3xl font-bold text-slate-900 border-l-8 border-pink-500 pl-4">DPP (Data Provável do Parto): como funciona</h3>
+        <p>
+          A DPP é estimada a partir da <strong>DUM</strong> somando cerca de <strong>40 semanas</strong> (280 dias), com ajuste pela duração do ciclo.
+          É uma estimativa — muitas gestações nascem antes ou depois. Profissionais podem ajustar a data com base em ultrassonografia precoce.
+        </p>
+      </article>
+    </section>
 
-        // BMR: Mifflin–St Jeor
-        const bmrMifflin = ({ sex, age, heightCm, weightKg }) => {
-            const s = sex === 'male' ? 5 : -161;
-            return (10 * weightKg) + (6.25 * heightCm) - (5 * age) + s;
-        };
+    <!-- FAQ -->
+    <section id="faq" class="bg-slate-100 rounded-2xl p-8 md:p-12 scroll-mt-24">
+      <h2 class="text-3xl font-bold text-slate-800 text-center mb-10">Perguntas frequentes (FAQ)</h2>
 
-        // BMI
-        const bmiForm = document.getElementById('bmi-form');
-        if (bmiForm) {
-            bmiForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(e.target);
-                const hCm = Number(data.get('heightCm'));
-                const wKg = Number(data.get('weightKg'));
+      <div class="max-w-4xl mx-auto space-y-4">
+        <details class="bg-white rounded-xl border border-slate-200 p-5">
+          <summary class="font-bold text-slate-800 cursor-pointer">As calculadoras são 100% precisas?</summary>
+          <p class="text-slate-600 mt-2">
+            Não. Elas são estimativas baseadas em fórmulas e referências amplamente usadas. A precisão varia por indivíduo e pela qualidade das medidas inseridas.
+          </p>
+        </details>
 
-                if (!hCm || !wKg) {
-                    showError('bmi-error', true);
-                    return;
-                }
-                showError('bmi-error', false);
+        <details class="bg-white rounded-xl border border-slate-200 p-5">
+          <summary class="font-bold text-slate-800 cursor-pointer">Qual a diferença entre TMB e TDEE?</summary>
+          <p class="text-slate-600 mt-2">
+            A TMB estima calorias em repouso. O TDEE estima o gasto diário total, multiplicando a TMB por um fator de atividade.
+          </p>
+        </details>
 
-                const h = cmToM(hCm);
-                const bmi = wKg / (h * h);
+        <details class="bg-white rounded-xl border border-slate-200 p-5">
+          <summary class="font-bold text-slate-800 cursor-pointer">Como medir pescoço/cintura/quadril para o método da Marinha?</summary>
+          <p class="text-slate-600 mt-2">
+            Use uma fita flexível, mantenha-a nivelada e com tensão constante. Meça a cintura no nível do umbigo (abordagem comum) e o pescoço logo abaixo da laringe.
+          </p>
+        </details>
 
-                let category = 'Normal';
-                if (bmi < 18.5) category = 'Underweight';
-                else if (bmi < 25) category = 'Normal';
-                else if (bmi < 30) category = 'Overweight';
-                else category = 'Obesity';
+        <details class="bg-white rounded-xl border border-slate-200 p-5">
+          <summary class="font-bold text-slate-800 cursor-pointer">IMC infantil serve para qualquer idade?</summary>
+          <p class="text-slate-600 mt-2">
+            Nesta página, o IMC infantil está configurado para 2 a 19 anos (curvas OMS). Para menores de 2 anos, a interpretação costuma usar outros indicadores pediátricos.
+          </p>
+        </details>
 
-                setResult('bmi-result', `
-                    <div class="space-y-2">
-                        <p class="text-4xl font-bold text-emerald-600">${round(bmi, 1)}</p>
-                        <p class="text-slate-700"><strong>Category:</strong> ${category}</p>
-                        <p class="text-xs text-slate-500">BMI is a screening metric. For body composition, consider body fat percentage too.</p>
-                    </div>
-                `);
-            });
-        }
+        <details class="bg-white rounded-xl border border-slate-200 p-5">
+          <summary class="font-bold text-slate-800 cursor-pointer">Isso é aconselhamento médico?</summary>
+          <p class="text-slate-600 mt-2">
+            Não. As ferramentas são educacionais e não substituem orientação profissional.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
 
-        // BMR
-        const bmrForm = document.getElementById('bmr-form');
-        if (bmrForm) {
-            bmrForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(e.target);
+  <!-- Rodapé -->
+  <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <span class="font-bold text-xl text-white">IMC E <span class="text-emerald-500">PROTEÍNA</span></span>
+        <p class="mt-4 text-sm opacity-80">
+          Sua fonte para cálculos de saúde, nutrição e bem-estar. Interface moderna, rápida e feita para PT-BR.
+        </p>
+        <p class="mt-2 text-sm text-emerald-500 font-semibold">www.imceproteina.com.br</p>
+      </div>
 
-                const payload = {
-                    sex: String(data.get('sex')),
-                    age: Number(data.get('age')),
-                    heightCm: Number(data.get('heightCm')),
-                    weightKg: Number(data.get('weightKg')),
-                };
+      <div>
+        <h4 class="font-bold text-white mb-4">Links rápidos</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#destaques" class="hover:text-emerald-400">Destaques</a></li>
+          <li><a href="#todas" class="hover:text-emerald-400">Todas as calculadoras</a></li>
+          <li><a href="#guias" class="hover:text-emerald-400">Guias</a></li>
+          <li><a href="#faq" class="hover:text-emerald-400">FAQ</a></li>
+          <li class="pt-2"><a href="sobre.html" class="hover:text-emerald-400">Sobre Nós</a></li>
+          <li><a href="contato.html" class="hover:text-emerald-400">Fale Conosco</a></li>
+        </ul>
+      </div>
 
-                if (!payload.age || !payload.heightCm || !payload.weightKg) {
-                    showError('bmr-error', true);
-                    return;
-                }
-                showError('bmr-error', false);
+      <div>
+        <h4 class="font-bold text-white mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="politica.html" class="hover:text-emerald-400">Política de Privacidade</a></li>
+          <li><a href="termos.html" class="hover:text-emerald-400">Termos de Uso</a></li>
+        </ul>
+        <p class="mt-6 text-xs opacity-50">&copy; 2026 IMCEPROTEINA. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
-                const bmr = bmrMifflin(payload);
-
-                setResult('bmr-result', `
-                    <div class="space-y-2">
-                        <p class="text-4xl font-bold text-emerald-600">${round(bmr, 0)} <span class="text-base font-semibold text-slate-600">kcal/day</span></p>
-                        <p class="text-slate-700"><strong>BMR</strong> estimates calories at rest.</p>
-                        <p class="text-xs text-slate-500">For daily needs, use the TDEE calculator (BMR × activity factor).</p>
-                    </div>
-                `);
-            });
-        }
-
-        // TDEE
-        const tdeeForm = document.getElementById('tdee-form');
-        if (tdeeForm) {
-            tdeeForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(e.target);
-
-                const payload = {
-                    sex: String(data.get('sex')),
-                    age: Number(data.get('age')),
-                    heightCm: Number(data.get('heightCm')),
-                    weightKg: Number(data.get('weightKg')),
-                };
-                const activity = Number(data.get('activity'));
-
-                if (!payload.age || !payload.heightCm || !payload.weightKg || !activity) {
-                    showError('tdee-error', true);
-                    return;
-                }
-                showError('tdee-error', false);
-
-                const bmr = bmrMifflin(payload);
-                const tdee = bmr * activity;
-
-                setResult('tdee-result', `
-                    <div class="space-y-3">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                                <p class="text-xs uppercase font-bold text-slate-500">BMR</p>
-                                <p class="text-2xl font-bold text-slate-800">${round(bmr, 0)} <span class="text-sm font-normal text-slate-500">kcal/day</span></p>
-                            </div>
-                            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-                                <p class="text-xs uppercase font-bold text-emerald-700">TDEE</p>
-                                <p class="text-2xl font-bold text-emerald-700">${round(tdee, 0)} <span class="text-sm font-normal text-emerald-700/80">kcal/day</span></p>
-                            </div>
-                        </div>
-                        <p class="text-xs text-slate-500">TDEE is an estimate. Track weight trends and adjust intake over time.</p>
-                    </div>
-                `);
-            });
-        }
-
-        // Body Fat % (US Navy) — metric
-        const bfForm = document.getElementById('bf-form');
-        if (bfForm) {
-            const hipWrapper = bfForm.querySelector('[data-female-only]');
-            const sexSelect = bfForm.querySelector('select[name="sex"]');
-
-            const syncHipVisibility = () => {
-                const isFemale = sexSelect.value === 'female';
-                hipWrapper.style.display = isFemale ? '' : 'none';
-                const hipInput = hipWrapper.querySelector('input');
-                hipInput.required = isFemale;
-                if (!isFemale) hipInput.value = '';
-            };
-
-            sexSelect.addEventListener('change', syncHipVisibility);
-            syncHipVisibility();
-
-            bfForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(e.target);
-
-                const sex = String(data.get('sex'));
-                const height = Number(data.get('heightCm'));
-                const neck = Number(data.get('neckCm'));
-                const waist = Number(data.get('waistCm'));
-                const hip = Number(data.get('hipCm'));
-
-                // Basic validation
-                if (!height || !neck || !waist || (sex === 'female' && !hip)) {
-                    showError('bf-error', true);
-                    return;
-                }
-
-                let bf;
-                if (sex === 'male') {
-                    const x = waist - neck;
-                    if (x <= 0) { showError('bf-error', true); return; }
-                    bf = 495 / (1.0324 - 0.19077 * log10(x) + 0.15456 * log10(height)) - 450;
-                } else {
-                    const x = waist + hip - neck;
-                    if (x <= 0) { showError('bf-error', true); return; }
-                    bf = 495 / (1.29579 - 0.35004 * log10(x) + 0.22100 * log10(height)) - 450;
-                }
-
-                if (!Number.isFinite(bf)) {
-                    showError('bf-error', true);
-                    return;
-                }
-                showError('bf-error', false);
-
-                setResult('bf-result', `
-                    <div class="space-y-2">
-                        <p class="text-4xl font-bold text-emerald-600">${round(bf, 1)}%</p>
-                        <p class="text-slate-700">Estimated body fat percentage (U.S. Navy method).</p>
-                        <p class="text-xs text-slate-500">Circumference-based estimates can vary with measurement technique.</p>
-                    </div>
-                `);
-            });
-        }
-
-        // Ideal Weight (kg): Devine, Robinson, Miller
-        const iwForm = document.getElementById('iw-form');
-        if (iwForm) {
-            const idealWeight = ({ sex, heightCm }) => {
-                const inches = cmToIn(heightCm);
-                const over60 = Math.max(0, inches - 60);
-
-                const devine = sex === 'male' ? (50 + 2.3 * over60) : (45.5 + 2.3 * over60);
-                const robinson = sex === 'male' ? (52 + 1.9 * over60) : (49 + 1.7 * over60);
-                const miller = sex === 'male' ? (56.2 + 1.41 * over60) : (53.1 + 1.36 * over60);
-
-                return { devine, robinson, miller };
-            };
-
-            iwForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(e.target);
-
-                const payload = {
-                    sex: String(data.get('sex')),
-                    heightCm: Number(data.get('heightCm')),
-                };
-
-                if (!payload.heightCm) {
-                    showError('iw-error', true);
-                    return;
-                }
-                showError('iw-error', false);
-
-                const { devine, robinson, miller } = idealWeight(payload);
-
-                setResult('iw-result', `
-                    <div class="space-y-3">
-                        <ul class="space-y-2">
-                            <li class="flex items-center justify-between bg-slate-50 border border-slate-200 rounded-lg p-3">
-                                <span class="font-semibold text-slate-700">Devine</span>
-                                <span class="font-bold text-emerald-700">${round(devine, 1)} kg</span>
-                            </li>
-                            <li class="flex items-center justify-between bg-slate-50 border border-slate-200 rounded-lg p-3">
-                                <span class="font-semibold text-slate-700">Robinson</span>
-                                <span class="font-bold text-emerald-700">${round(robinson, 1)} kg</span>
-                            </li>
-                            <li class="flex items-center justify-between bg-slate-50 border border-slate-200 rounded-lg p-3">
-                                <span class="font-semibold text-slate-700">Miller</span>
-                                <span class="font-bold text-emerald-700">${round(miller, 1)} kg</span>
-                            </li>
-                        </ul>
-                        <p class="text-xs text-slate-500">These are reference estimates. Realistic targets depend on body composition, health, and goals.</p>
-                    </div>
-                `);
-            });
-        }
-    </script>
+  <!-- JS (separado) -->
+  <script type="module" src="app.js" defer></script>
 </body>
 </html>
